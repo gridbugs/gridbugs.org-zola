@@ -1,0 +1,9 @@
+base_url = "https://www.gridbugs.org"
+compile_sass = true
+
+taxonomies = [
+    { name = "tags" },
+]
+
+[markdown]
+highlight_code = true
