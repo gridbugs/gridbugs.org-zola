@@ -14,7 +14,7 @@ tags = ["nes", "emulation"]
     image-rendering: pixelated;
 }
 
-.nes-half img {
+.nes-tile img {
     width: 64px;
     height: 64px;
     image-rendering: crisp-edges;
@@ -43,7 +43,7 @@ task of hunting down the parts of your emulator that don't behave exactly
 like the real hardware.
 
 <div class="nes-emulator-debugging-screenshot">
-![example.png](example.png)
+<img src="example.png">
 </div>
 
 <!-- more -->
@@ -57,7 +57,7 @@ Once I had the CPU and video output working to the point that _something_ not co
 I ran the game. I wasn't emulating input yet, so I waited for the demo.
 
 <div class="nes-emulator-debugging-screenshot">
-![demo.gif](demo.gif)
+<img src="demo.gif">
 </div>
 
 _Hey, it mostly works!_
@@ -176,7 +176,7 @@ and work on what was hopefully a simpler problem.
 
 
 <div class="mario-render">
-![mario-incorrect-render.png](mario-incorrect-render.png)
+<img src="mario-incorrect-render.png">
 </div>
 
 The Mario and Luigi sprites are a 2x3 rectangle of 8 pixel square tiles.
@@ -186,7 +186,7 @@ adjacent.
 It's supposed to look like this.
 
 <div class="mario-render">
-![mario-correct-render.png](mario-correct-render.png)
+<img src="mario-correct-render.png">
 </div>
 
 ### NES Sprite Rendering
@@ -302,7 +302,7 @@ In my first pass through the manual I did not pick up on this subtlety!
 Correcting this instruction in my emulator, and now Mario renders correctly.
 
 <div class="nes-emulator-debugging-screenshot">
-![gravity-works.gif](gravity-works.gif)
+<img src="gravity-works.gif">
 </div>
 
 It seems that fixing this bug also fixed gravity...
@@ -321,7 +321,7 @@ game and conduct experiments.
 Here's a more explicit demonstration of the problem.
 
 <div class="nes-emulator-debugging-screenshot">
-![floor-extension.gif](floor-extension.gif)
+<img src="floor-extension.gif">
 </div>
 
 This only happens if you hit a platform on its bottom-left corner. This fact,
@@ -340,7 +340,7 @@ If collision detection has an erroneous offset, you should be able to move
 through the right-hand side of a platform too.
 
 <div class="nes-emulator-debugging-screenshot">
-![jump-through-floor.gif](jump-through-floor.gif)
+<img src="jump-through-floor.gif">
 </div>
 
 Turtles also fall through platforms too early on the right-hand side, and too
@@ -580,7 +580,7 @@ Mario's X position with a specific value which won't result in a collision.
 Notice how Mario teleports a few pixels to the left on the second frame.
 
 <div class="nes-emulator-debugging-screenshot">
-![short-jump-no-collision.gif](short-jump-no-collision.gif)
+<img src="short-jump-no-collision.gif">
 </div>
 
 I ran this for a specific number of frames, and recorded an execution trace.
@@ -588,7 +588,7 @@ Then I repeated the experiment with an X offset which would result in a
 collision.
 
 <div class="nes-emulator-debugging-screenshot">
-![short-jump-collision.gif](short-jump-collision.gif)
+<img src="short-jump-collision.gif">
 </div>
 
 Equipped with a collision trace, and a non-collision trace, I could now compare
@@ -674,7 +674,7 @@ Let's hazard a guess that these are indices of background tiles.
 Tile number `0x24`:
 
 <div class="nes-tile">
-![tile-24.png](tile-24.png)
+<img src="tile-24.png">
 </div>
 
 That is an 8x8 square of black pixels, used for the empty space in the
@@ -683,7 +683,7 @@ background.
 Can you guess what tile `0x93` is:
 
 <div class="nes-tile">
-![tile-93.png](tile-93.png)
+<img src="tile-93.png">
 </div>
 
 A floor tile!
@@ -797,7 +797,7 @@ VRAM address. **Thus, after setting the VRAM address, one should first read this
 register and discard the result.**_
 
 <div class="nes-emulator-debugging-screenshot">
-![working.gif](working.gif)
+<img src="working.gif">
 </div>
 
 Now that I've had my fun, I'm going to subject my emulator to a

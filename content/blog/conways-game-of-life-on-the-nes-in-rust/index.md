@@ -55,7 +55,7 @@ $ conway-nes > life.nes
 $ fceux life.nes    # fceux is a NES emulator
 ```
 <div class="nes-screenshot">
-![demo.webp](demo.webp)
+<img src="demo.webp">
 </div>
 
 <!-- more -->
@@ -151,7 +151,7 @@ Here's the second generation above with bytes blacked-out if the bitwise XOR wit
 generation is 0 (ie. there was no change in that byte between the two generations).
 
 <div class="nes-screenshot">
-![frame1-byte-outlines-xor.png](frame1-byte-outlines-xor.png)
+<img src="frame1-byte-outlines-xor.png">
 </div>
 
 Since the current video memory address is incremented with every video memory write,
@@ -218,7 +218,7 @@ This is the reason for the vertical wipe artefact visible when the effective fra
 Here's a visualization of the nametable entries that are written on each frame.
 
 <div class="nes-screenshot">
-![lazy.webp](lazy.webp)
+<img src="lazy.webp">
 </div>
 
 ### Patterns
@@ -233,19 +233,19 @@ In Game of Life, each cell is either alive or dead, so one approach would be to 
 Here pattern 0 represents a dead cell, and 1 represent a live cell. The remaining patterns are unused.
 
 <div class="pattern-table">
-![naive-patterns.png](naive-patterns.png)
+<img src="naive-patterns.png">
 </div>
 
 Writing a 0 to a nametable entry would set the corresponding background tile to a dead cell,
 
 <div class="pattern">
-![dead.png](dead.png)
+<img src="dead.png">
 </div>
 
 and writing a 1 would show a live cell.
 
 <div class="pattern">
-![alive.png](alive.png)
+<img src="alive.png">
 </div>
 
 In the draw queue, each 8-tile horizontal strip is represented by a single byte, where each bit
@@ -285,7 +285,7 @@ pattern table such that _all_ odd nametable entries corresponded to a live cell,
 The pattern table becomes:
 
 <div class="pattern-table">
-![patterns.png](patterns.png)
+<img src="patterns.png">.
 </div>
 
 Every even entry is dead, and every odd entry is alive.
@@ -473,7 +473,7 @@ Build up all 8 counts at the same time. This way, for each byte, only 9 bytes (t
 need to be read from memory.
 
 <div class="nes-3x3">
-![3x3-1.png](3x3-1.png)
+<img src="3x3-1.png">
 </div>
 
 The method of incrementing living neighbour count of a cell based on a neighbouring byte depends on which neighbour it is.
@@ -483,7 +483,7 @@ In the byte which is down and to the left of the current byte, only the left-mos
 The cell represented by this bit is only adjacent to the right-most bit of the current byte.
 
 <div class="nes-3x3">
-![3x3-2.png](3x3-2.png)
+<img src="3x3-2.png">
 </div>
 
 Once all the living neighbours of each of the 8 cells have been counted, the state of the corresponding cells in the next
@@ -494,7 +494,7 @@ generation is decided based on the living neighbour counts and current cell stat
 To compute the next state of an 8-cell strip, the 8 neighbouring bytes in the 4x30 byte grid need to be considered.
 
 <div class="nes-screenshot">
-![darkened.png](darkened.png)
+<img src="darkened.png">
 </div>
 
 Computing the indices of the neighbours of a cell with a given index is not a hard problem, but computing the 8 neighbours
@@ -537,7 +537,7 @@ When I first implemented Game of Life and ran it on a simple configuration of [g
 it mostly worked, but exploded when the frame-to-frame difference became zero.
 
 <div class="nes-screenshot">
-![outtake.webp](outtake.webp)
+<img src="outtake.webp">
 </div>
 
 When populating the draw queue, I wasn't handling the case where there is no frame-to-frame difference.

@@ -1,10 +1,6 @@
 +++
-title = "List of daily posts"
+title = "Daily Posts"
 sort_by = "date"
 template = "blog.html"
 page_template = "blog-page.html"
 +++
-
-[home](@/_index.md)
-
-foo

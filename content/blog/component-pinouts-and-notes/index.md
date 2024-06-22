@@ -46,6 +46,7 @@ pointing downwards:
 
 The figure of 7v as the minimum input voltage is based on this image from the
 manual:
+
 ![plot showing the relationship between input and output voltage](78l05-input-to-output.png)
 
 So the actual minimum input voltage depends on how much current is being drawn

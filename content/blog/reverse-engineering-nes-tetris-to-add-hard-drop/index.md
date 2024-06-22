@@ -40,7 +40,7 @@ This post describes a modification I made to NES Tetris so that pressing the "up
 and so that the game renders a "ghost piece" - a dotted outline of the current piece showing where it will land.
 
 <div class="nes-screenshot">
-![screenshot1.png](screenshot1.png)
+<img src="screenshot1.png">
 </div>
 
 <!-- more -->
@@ -54,7 +54,7 @@ For soft drop, pressing a button will instantly move the current piece down one 
 the button will cause it to drop faster than it otherwise would.
 
 <div class="nes-screenshot">
-![soft-drop-animation.gif](soft-drop-animation.gif)
+<img src="soft-drop-animation.gif">
 </div>
 
 Hard drop instantly drops the current piece and locks it into place.
@@ -63,7 +63,7 @@ to visually tell whether the piece is lined up with where they want it to land, 
 hard drop usually display a ghost piece showing where the current piece will end up.
 
 <div class="nes-screenshot">
-![hard-drop-animation.gif](hard-drop-animation.gif)
+<img src="hard-drop-animation.gif">
 </div>
 
 Prior to my changes, NES Tetris only supported soft drop.
@@ -130,15 +130,15 @@ The NES has two different types of graphics:
 Most games use a combination of both, and Tetris is no exception.
 
 <div class="nes-screenshot-half">
-![demo-full.gif](demo-full.gif)
+<img src="demo-full.gif">
 </div>
 
 Tetris uses sprites to draw the current piece and the next piece, and background graphics for everything else.
 The images below isolate the two types of graphics in the scene above, with the background on the left and sprites on the right.
 
 <div class="nes-screenshot-half">
-![demo-background.gif](demo-background.gif)
-![demo-sprites.gif](demo-sprites.gif)
+<img src="demo-background.gif">
+<img src="demo-sprites.gif">
 </div>
 
 The game clearly has logic already for drawing the current piece using sprites, so
@@ -148,7 +148,7 @@ a ghostly tile rather than the normal tile.
 Speaking of ghostly tiles, I added a new tile to the game to use for the ghost piece:
 
 <div class="nes-screenshot-quarter">
-![ghost-block.png](ghost-block.png)
+<img src="ghost-block.png">
 </div>
 
 My goal here is to hunt down the part of Tetris that renders the current piece in order to
@@ -259,7 +259,7 @@ b.inst(Rts, ());
 ```
 
 <div class="nes-screenshot">
-![ghost-piece-test1.gif](ghost-piece-test1.gif)
+<img src="ghost-piece-test1.gif">
 </div>
 
 Next I made my ghost-piece-rendering function take an argument specifying the vertical distance
@@ -283,7 +283,7 @@ b.inst(Rts, ());
 ```
 
 <div class="nes-screenshot">
-![ghost-piece-test2.gif](ghost-piece-test2.gif)
+<img src="ghost-piece-test2.gif">
 </div>
 
 Now to compute the true vertical offset from the current piece to the place it would land after
@@ -424,7 +424,7 @@ b.inst(Rts, ());
 
 The result:
 <div class="nes-screenshot">
-![ghost-piece-test3.gif](ghost-piece-test3.gif)
+<img src="ghost-piece-test3.gif">
 </div>
 
 ## Adding the Hard Drop Control
@@ -532,7 +532,7 @@ b.inst(Rts, ());
 Here's the code in action, with me pressing "up" multiple times:
 
 <div class="nes-screenshot">
-![hard-drop-test1.gif](hard-drop-test1.gif)
+<img src="hard-drop-test1.gif">
 </div>
 
 Next, replace the testing constant 7 with the actual position that the
@@ -572,7 +572,7 @@ b.inst(Rts, ());
 ```
 
 <div class="nes-screenshot">
-![hard-drop-test2.gif](hard-drop-test2.gif)
+<img src="hard-drop-test2.gif">
 </div>
 
 That's looking pretty good!
@@ -587,7 +587,7 @@ To learn more, I had my emulator log all instructions and ran the game for 13 ti
 I chose 13 because it seemed unlikely to appear by accident.
 
 <div class="nes-screenshot">
-![13.gif](13.gif)
+<img src="13.gif">
 </div>
 
 During this run, the timer would have expired 13 times. Somewhere in the instruction log there is a
@@ -664,7 +664,7 @@ b.inst(Rts, ());
 ```
 
 <div class="nes-screenshot">
-![hard-drop-test3.gif](hard-drop-test3.gif)
+<img src="hard-drop-test3.gif">
 </div>
 
 Looking better, but there's still a long delay if you hard drop the first piece during the first tick.
@@ -715,7 +715,7 @@ b.inst(Rts, ());
 ```
 
 <div class="nes-screenshot">
-![hard-drop-test4.gif](hard-drop-test4.gif)
+<img src="hard-drop-test4.gif">
 </div>
 
 That appears to be working!

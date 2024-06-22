@@ -1,6 +1,5 @@
 * TODO
 
- - pagination
  - check image links on post-mortem-of-abandoned-game post
  - check that the conway game of life post animation works
  - make sure all images are compressed

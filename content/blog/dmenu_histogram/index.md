@@ -42,9 +42,13 @@ world
 $ echo -e 'hello\nworld' | dmenu
 ```
 The second command displays this GUI at the top of the screen:
+
 ![dmenu-hello-world.png](dmenu-hello-world.png)
+
 Use the arrow keys to change the selection or start typing a name to narrow down the list:
+
 ![dmenu-world.png](dmenu-world.png)
+
 Hit enter and dmenu exits after printing `world` to its standard output.
 
 To use it as a program launcher, the dmenu package comes with a third program - a shell script
@@ -58,8 +62,11 @@ As an aside, dmenu is a perfect example of a tool which does one thing well, and
 to an existing set of tools by being easily composable.
 
 Here's the list I see when I run it:
+
 ![dmenu.png](dmenu.png)
+
 And after pressing "t":
+
 ![dmenu-t.png](dmenu-t.png)
 
 Menu items are shown in the order they appeared on `dmenu`'s stdin, and `dmenu_path` prints
@@ -70,9 +77,13 @@ it's unlikely that they will appear early in the alphabetically-listed program n
 these programs in order of frequency on `dmenu`'s stdin before the output of `dmenu_path`.
 
 Running the `dmenu_histogram` script:
+
 ![hist.png](hist.png)
+
 ...shows a list of programs I commonly use. If I press "t"...
+
 ![hist-t.png](hist-t.png)
+
 ...the list narrows to just the programs starting with "t", and still shows the most
 frequent programs first.
 

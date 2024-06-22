@@ -26,7 +26,7 @@ manipulating the NES graphics hardware in a manner that was likely unintended by
 designers.
 
 <div class="nes-screenshot">
-![title.png](title.png)
+<div src="title.png">
 </div>
 
 Since I don't have access
@@ -41,7 +41,7 @@ the following effect should not be possible:
 <!-- more -->
 
 <div class="nes-screenshot">
-![example.webp](example.webp)
+<img src="example.webp">
 </div>
 
 When scrolling the screen vertically, the entire screen has to scroll together.
@@ -55,7 +55,7 @@ Partial *horizontal* scrolling, on the other hand, is
 completely well-defined.
 
 <div class="nes-screenshot">
-![horizontal-scrolling.webp](horizontal-scrolling.webp)
+<img src="horizontal-scrolling.webp">
 </div>
 
 Writing to a particular PPU register while a frame is being drawn can result in graphical artefacts.
@@ -70,17 +70,17 @@ The NES has 2 types of graphics:
 
 To highlight the difference, here's a scene made up of sprites and background:
 <div class="nes-screenshot">
-![sprites-and-background.webp](sprites-and-background.webp)
+<img src="sprites-and-background.webp">
 </div>
 
 Here's the same scene with only the sprites visible:
 <div class="nes-screenshot">
-![only-sprites.webp](only-sprites.webp)
+<img src="only-sprites.webp">
 </div>
 
 And here's the scene with only the background visible:
 <div class="nes-screenshot">
-![only-background.webp](only-background.webp)
+<img src="only-background.webp">
 </div>
 
 ## Scrolling
@@ -127,7 +127,7 @@ This image shows a snapshot of the contents of all 4 name tables. The top-left a
 as are the bottom-left and bottom-right.
 
 <div class="nes-screenshot">
-![name-table-mirroring.png](name-table-mirroring.png)
+<img src="name-table-mirroring.png">
 </div>
 
 Why not just have 2 name tables then?
@@ -138,11 +138,11 @@ the top-left and top-right name tables are different, so it can scroll between t
 In this configuration, the top-left and bottom-left name tables will refer to the same
 real name table, and likewise the top-right and bottom-right. This configuration is named "Vertical Mirroring".
 
-{% image vertical-mirroring.png style="width:50%" %}
+![vertical-mirroring.png](vertical-mirroring.png)
 
 The other possible configuration is "Horizontal Mirroring", which games use when they want to scroll vertically.
 
-{% image horizontal-mirroring.png style="width:50%" %}
+![horizontal-mirroring.png](horizontal-mirroring.png)
 
 Games usually don't scroll diagonally, as it produces artifacts around the edge of the screen due to name table
 mirroring.

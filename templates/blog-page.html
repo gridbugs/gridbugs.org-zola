@@ -1,24 +1,33 @@
 {# A single blog post #}
 {% extends "page.html" %}
 
-{% block content %}
 
-<a href="/blog">blog</a>
+{% block content %}
+{% set section = get_section(path=page.ancestors | last) %}
+
 <h1 class="title">
   {{ page.title }}
 </h1>
+
+{# The date, section, and tags of the post #}
 <div class="subtitle">
   Published on {{ page.date | date(format = "%B %d, %Y") }}
-  {% if page.taxonomies.tags %}
   in
+  <a href="{{ section.permalink }}">{{ section.title }}</a>
+  {% if page.taxonomies.tags %}
+  (tags
   {% for tag in page.taxonomies.tags %}
-  <a href="/tags/{{tag}}">{{ tag }}</a>
-  {% endfor %}
+  <a href="/tags/{{ tag }}">{{ tag }}</a>{% endfor %})
+  {#
+  The endfor and close paren are on the previous line to prevent
+  whitespace between the final tag and close paren.
+  #}
   {% endif %}
 </div>
 
 {{ page.content | safe }}
 
+{# Links to the next and previous posts #}
 <nav role="navigation">
   <ul>
     {% if page.higher %}
