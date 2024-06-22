@@ -26,7 +26,7 @@ manipulating the NES graphics hardware in a manner that was likely unintended by
 designers.
 
 <div class="nes-screenshot">
-<div src="title.png">
+<img src="title.png">
 </div>
 
 Since I don't have access
