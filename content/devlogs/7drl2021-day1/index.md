@@ -175,7 +175,7 @@ player ('@') there.
 
 ## Wire terrain generation up to the engine
 
-I started with the code for [slime99](@/blog/slime99/index.md) and pulled all the content out, then plugged in the new terrain generator.
+I started with the code for [slime99](@/projects/slime99/index.md) and pulled all the content out, then plugged in the new terrain generator.
 
 ![slime99-engine.png](slime99-engine.png)
 

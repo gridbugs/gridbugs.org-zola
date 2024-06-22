@@ -16,7 +16,7 @@ be implemented in games. Nobody wants to discover late in development that their
 engine can't be used to efficiently implement a certain feature.
 
 This post will describe the framework I developed to encode rules in two games I
-recently made: [Glacial %} and {% local bugcatcher | Bugcatcher](@/blog/glacial/index.md). It's based on
+recently made: [Glacial](@/projects/glacial/index.md) and [Bugcatcher](@/projects/bugcatcher/index.md). It's based on
 the idea of an Entity Component System (ECS), extended with the abstraction of
 Actions.
 

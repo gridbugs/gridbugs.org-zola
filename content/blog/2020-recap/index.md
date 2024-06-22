@@ -34,7 +34,7 @@ The series is listed in the tutorial section of the [roguelikedev subreddit](htt
 
 This was my 7 Day Roguelike of 2020.
 Its core mechanic is managing a stack of abilities that must be used in order.
-I wrote a detailed post mortem of the project [here](@/blog/slime99/index.md).
+I wrote a detailed post mortem of the project [here](@/projects/slime99/index.md).
 
 ![slime99-screenshot.png](slime99-screenshot.png)
 

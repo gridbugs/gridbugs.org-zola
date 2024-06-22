@@ -11,8 +11,8 @@ og_image = "cursed.png"
 +++
 
 One problem with using the rust programming language for game development is the
-notoriously slow compile times. For my recent 7DRL project 
-[Boat Journey](@/blog/boat-journey/index.md) an incremental debug build takes about 6
+notoriously slow compile times. For my recent 7DRL project
+[Boat Journey](@/projects/boat-journey/index.md) an incremental debug build takes about 6
 seconds on my main development machine. This is frustratingly slow when making
 many minor gameplay tweaks during playtesting.
 

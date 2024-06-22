@@ -28,8 +28,8 @@ This is my entry in the 7 Day Roguelike 2021 game jam.
 
 <!-- more -->
 
-This is my 6th 7DRL, and I attempted to take the basic idea of 
-[my first 7DRL (Skeleton Crew)](@/blog/skeleton-crew/index.md)
+This is my 6th 7DRL, and I attempted to take the basic idea of
+[my first 7DRL (Skeleton Crew)](@/projects/skeleton-crew/index.md)
 and add the strategic and tactical depth that I felt that
 game was lacking. I had a blast making this and I think it turned out super
 well!

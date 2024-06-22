@@ -2,10 +2,38 @@
 {% extends "page.html" %}
 
 {% block content %}
+
 <a href="/blog">blog</a>
 <h1 class="title">
   {{ page.title }}
 </h1>
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
+<div class="subtitle">
+  Published on {{ page.date | date(format = "%B %d, %Y") }}
+  {% if page.taxonomies.tags %}
+  in
+  {% for tag in page.taxonomies.tags %}
+  <a href="/tags/{{tag}}">{{ tag }}</a>
+  {% endfor %}
+  {% endif %}
+</div>
+
 {{ page.content | safe }}
+
+<nav role="navigation">
+  <ul>
+    {% if page.higher %}
+    <li>
+      Next Post:
+      <a href="{{ page.higher.permalink }}" aria-label="Next Post">{{ page.higher.title }}</a>
+    </li>
+    {% endif %}
+    {% if page.lower %}
+    <li>
+      Previous Post:
+      <a href="{{ page.lower.permalink }}" aria-label="Previous Post">{{ page.lower.title }}</a>
+    </li>
+    {% endif %}
+  </ul>
+</nav>
+
 {% endblock content %}

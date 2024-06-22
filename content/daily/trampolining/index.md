@@ -18,7 +18,7 @@ I think I have a solution, though I'm yet to fully test it out (some other thing
 The plan is the following: Add a new section to the ELF with a tiny bit of code at the start that just
 jumps to the user program's entry point. Something like
 
-```nasm
+```asm
 ; the user "_start" function is renamed to "__user__start" to avoid name conflicts with kernel code
 extern __user__start
 
@@ -31,7 +31,7 @@ jmp __user__start
 This solves the problem because unlike the user's `_start` function, which could be located anywhere
 within the user program's `.text` section, we can tell the linker to put the above code at the beginning
 of a brand new section dedicated just for it:
-```linkerscript
+```ld
 . = user_base;
 .user.trampoline : ALIGN(0x1000) {
     *(.user.trampoline)

@@ -40,7 +40,7 @@ A character's knowledge is represented by "shadow entities", made up of
 "shadow components". These were designed to be frequently updated by setting
 data in shadow components from "canonical" reference components without allocating
 any new objects. This was a technique I learnt while solving performance problems in a
-[game I wrote earlier](@/blog/bugcatcher/index.md).
+[game I wrote earlier](@/projects/bugcatcher/index.md).
 
 At the
 start of a character's turn, the vision system runs and updates that character's

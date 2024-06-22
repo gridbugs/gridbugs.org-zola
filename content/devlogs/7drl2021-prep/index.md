@@ -15,7 +15,7 @@ tags = ["gamedev", "roguelikes", "7drl"]
 
 This year's 7DRL is days away.
 Over the last few weeks I've dusted off my game engine and come up with a plan for the jam.
-I'm going to revisit the idea behind my first 7DRL - [Skeleton Crew](@/blog/skeleton-crew/index.md) -
+I'm going to revisit the idea behind my first 7DRL - [Skeleton Crew](@/projects/skeleton-crew/index.md) -
 which was a game about fighting zombies in a space ship where shooting the hull caused the
 ship to decompress.
 
@@ -77,7 +77,7 @@ Better make those odds 6 to 1...
 ## Concept Art
 
 So that I don't spend hours on the first day bikeshedding art style, I've drawn some sketches.
-Last year I had great success using a grid of 2x2 character tiles in [slime99](@/blog/slime99/index.md),
+Last year I had great success using a grid of 2x2 character tiles in [slime99](@/projects/slime99/index.md),
 so this year I'm going to take it further and use a grid of _3x3_ tiles. This will let each enemy
 have two visible stats, and 3 letters for their name.
 

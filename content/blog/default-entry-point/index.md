@@ -4,7 +4,7 @@ date = 2023-01-07
 path = "if-you-use-a-custom-linker-script-_start-is-not-necessarily-the-entry-point"
 
 [taxonomies]
-tags = ["unix"]
+tags = ["unix", "systems"]
 +++
 
 For most of my life I took for granted that programs begin executing at an
@@ -12,7 +12,7 @@ address denoted by the symbol `_start` (a single underscore, followed by the
 word "start"). Turns out it's not so simple.
 
 Take this x86 assembly program that prints "Hello, World!" on Linux:
-```
+```asm
 .global _start
 
 .text
@@ -44,7 +44,7 @@ Hello, World!
 <!-- more -->
 
 Now add this custom linker script in a file named link.ld:
-```
+```ld
 SECTIONS {
     . = 0x1000;
 }
@@ -116,7 +116,7 @@ No wonder it crashes.
 
 One way to fix this problem is to force the linker to use `_start` as the
 entry point by updating the linker script to:
-```
+```ld
 ENTRY(_start);
 
 SECTIONS {
@@ -154,7 +154,7 @@ Note the option `the value of the symbol start, if present;`.
 
 So with that in mind, get rid of the `ENTRY(_start);` from the custom linker script, and change the assembly
 program to replace `_start` with `start`:
-```
+```asm
 .global start
 
 .text
@@ -184,7 +184,7 @@ it will work just fine although the `_start` symbol will be ignored.
 
 If your program starts at the beginning of `text`, you don't even need a symbol to point
 to the entry point:
-```
+```asm
 .text
     # print the message
     mov $1, %rax        # syscall 1 is write

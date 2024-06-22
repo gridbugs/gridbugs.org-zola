@@ -57,7 +57,7 @@ But what to do with the 4th character?
 ### Enemies telegraph their next actions
 
 The top-right character of each enemy's 2x2 character cell is used to show the player which direction that
-enemy will move on their next turn. I did this [last year](@/blog/get-well-soon/index.md) too, but since each
+enemy will move on their next turn. I did this [last year](@/projects/get-well-soon/index.md) too, but since each
 enemy was rendered with a single character, I had to draw the arrow on the ground.
 
 ![gws.png](gws.png)
@@ -107,7 +107,7 @@ This year the input is simpler, and level generation is effectively instant.
 
 ### Escape from State Machine Hell
 
-[Last year](@/blog/7drl2019-day4/index.md) I lamented that as the number of menus and other interactive UI
+[Last year](@/devlogs/7drl2019-day4/index.md) I lamented that as the number of menus and other interactive UI
 elements grew, the complexity of knowing what to render, and what to do with inputs, grew to the point
 of unmaintainability. In response to this, I made a library for implementing reusable, composable, "pseudo-synchronous"
 state machines.

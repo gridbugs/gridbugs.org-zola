@@ -306,9 +306,9 @@ second!](http://roguetemple.com/7drl/2018/)
 
 ![7drl2018-success-screenshot.png](7drl2018-success-screenshot.png)
 
-[Post announcing the game](@/blog/meters-below-the-ground/index.md)
+[Post announcing the game](@/projects/meters-below-the-ground/index.md)
 
-[Start of development journal](@/blog/7drl2018-day1/index.md)
+[Start of development journal](@/devlogs/7drl2018-day1/index.md)
 
 After reflecting on this, I no longer think that an entity component system is appropriate for representing the
 types of games that I enjoy creating. The great thing about an ECS is how easy
