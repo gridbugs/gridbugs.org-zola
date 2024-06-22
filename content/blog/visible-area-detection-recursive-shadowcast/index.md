@@ -15,12 +15,9 @@ by 2D grids.
 This makes it suitable for use in roguelikes.
 This post will explain the recursive shadowcast algorithm.
 
-![dcss0.png](dcss0.png)
+![Screenshot from Dungeon Crawl Stone Soup demonstrating its visible area detection](dcss0.png)
+
 <!-- more -->
-
-<p class="label">Screenshot from Dungeon Crawl Stone Soup demonstrating its
-visible area detection</p>
-
 
 ## Visible Area Detection in a 2D Grid
 Before diving into the details, let's get a feel for 2D grid-based visible area
@@ -117,7 +114,7 @@ encountered, recurse, incrementing the depth, and adjusting the min and max
 slope such that the opaque cell obscures vision at the next depth level. This
 process is documented more concretely in the following pseudocode.
 
-```lua
+```javascript
 computeVisibleArea(current_depth, min_slope, max_slope) {
 
   first = true;
@@ -294,7 +291,7 @@ be used to derive others. Despite this, for simplicity, when computing the
 visible area for a given octant, let's just pass all the characteristics as
 arguments:
 
-```lua
+```javascript
 computeVisibleArea(current_depth, min_slope, max_slope,
                    depth_direction, scan_direction,
                    opaque_corner, transparent_corner) {
@@ -357,7 +354,7 @@ We'll need a data structure representing state once represented by a recursive
 call. The arguments that could change with each recursive call are `depth`,
 `min_slope` and `max_slope`. Thus, our structure will look like:
 
-```lua
+```javascript
 class StackFrame {
   depth;
   min_slope;
@@ -373,7 +370,7 @@ class StackFrame {
 
 Using this, and an assumed Stack data structure, the code becomes:
 
-```lua
+```javascript
 computeVisibleArea(initial_min_slope, initial_max_slope,
                    depth_direction, scan_direction,
                    opaque_corner, transparent_corner) {
@@ -467,7 +464,7 @@ octant, giving it the relevant arguments for that octant. The following function
 does this, starting with the octant in the example above, going around
 clockwise.
 
-```lua
+```javascript
 computeTotalVisibleArea() {
   computeVisibleArea(0, 1,  North, East, NorthWest, SouthWest);
   computeVisibleArea(-1, 0, East, South, NorthWest, NorthEast);

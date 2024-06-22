@@ -435,6 +435,7 @@ actually work in all cases, so you may occasionally have to employ some actual t
 
 Now, imagine you wanted to solve an empty sudoku in the same way as just
 described:
+
 ![sudoku-empty.png](sudoku-empty.png)
 
 Your goal is still to end up with the numbers from 1-9 in every row, column,
