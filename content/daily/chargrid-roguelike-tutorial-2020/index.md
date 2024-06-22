@@ -8,7 +8,7 @@ Today I finished writing the code and tutorial pages for the tutorial I'm making
 as part of
 [roguelikedev subreddit does the complete
 roguelike tutorial](https://old.reddit.com/r/roguelikedev/wiki/python_tutorial_series).
-The tutorial pages can be read [here](@/roguelike-tutorial-2020/index.md).
+The tutorial pages can be read [here](@/roguelike-tutorial-2020/_index.md).
 
 I've been working on this in my spare time for about 8 weeks. Unlike the 7drl,
 for this project I started from nothing and built the entire engine and game using

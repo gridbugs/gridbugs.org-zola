@@ -5,7 +5,7 @@ slug = "learning-about-kqueue"
 +++
 
 I'm trying to fix a bug in the `rb-kqueue` gem which occasionally
-[crashes the ruby interpreter](@/building-this-site-sometimes-crashes-ruby/index.md)
+[crashes the ruby interpreter](@/daily/building-this-site-sometimes-crashes-ruby/index.md)
 when I'm running a file-watching server while working on this site.
 
 The bug seems to be in the `rb-kqueue` gem, which is a thin wrapper around *BSD's kqueue

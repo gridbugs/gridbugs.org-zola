@@ -342,4 +342,4 @@ rooms and corridors.
 
 Reference implementation branch: [part-3.3](https://github.com/gridbugs/chargrid-roguelike-tutorial-2020/tree/part-3.3)
 
-[Click here for the next part!](@/roguelike-tutorial-2020-part-4/index.md)
+[Click here for the next part!](@/roguelike-tutorial-2020/part4/index.md)

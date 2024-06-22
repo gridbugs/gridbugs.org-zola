@@ -7,7 +7,7 @@ path = "roguelike-tutorial-2020-part-2"
 og_image = "screenshot-end.png"
 +++
 
-In the [previous part](@/roguelike-tutorial-2020-part-1/index.md) we got a single '@' sign moving
+In the [previous part](@/roguelike-tutorial-2020/part1/index.md) we got a single '@' sign moving
 around the screen. The player character was represented by a coordinate stored directly in
 the game state. In this part, we'll define a generic "entity" type, of which the player character
 is merely one instance. The rendering logic will be generalized to draw arbitrary game entities.
@@ -789,4 +789,4 @@ Try to move the player character through the walls (`#`)!
 
 Reference implementation branch: [part-2.4](https://github.com/gridbugs/chargrid-roguelike-tutorial-2020/tree/part-2.4)
 
-[Click here for the next part!](@/roguelike-tutorial-2020-part-3/index.md)
+[Click here for the next part!](@/roguelike-tutorial-2020/part3/index.md)

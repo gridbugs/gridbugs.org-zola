@@ -218,7 +218,7 @@ implemented in a fragment shader.
 
 ![life-gl](https://raw.githubusercontent.com/gridbugs/life-gl/master/images/screenshot1.png)
 
-I've implemented Conway's Game of Life many times. [There's a javascript implementation embedded in an earlier post!](@/blog/cellular-automata-cave-generation//index.md) This implementation is
+I've implemented Conway's Game of Life many times. [There's a javascript implementation embedded in an earlier post!](@/blog/cellular-automata-cave-generation/index.md) This implementation is
 interesting because each frame, the per-cell computation is done on the GPU,
 allowing for a great deal of parallelism. When a frame is rendered, it is also
 rendered to a texture. When the following frame is rendered, it samples that
@@ -255,7 +255,7 @@ lighting, as if a wall is lit from one side only, and the player is looking at
 the other side, they shouldn't see that the wall is lit, even though they are
 looking at a tile which the light touches.
 
-[Read more about recursive shadowcast.](@/blog/visible-area-detection-recursive-shadowcast//index.md)
+[Read more about recursive shadowcast.](@/blog/visible-area-detection-recursive-shadowcast/index.md)
 
 ### [Grid-Search](https://github.com/gridbugs/grid-search)
 
@@ -306,9 +306,9 @@ second!](http://roguetemple.com/7drl/2018/)
 
 ![7drl2018-success-screenshot.png](7drl2018-success-screenshot.png)
 
-[Post announcing the game](@/blog/meters-below-the-ground//index.md)
+[Post announcing the game](@/blog/meters-below-the-ground/index.md)
 
-[Start of development journal](@/blog/7drl2018-day1//index.md)
+[Start of development journal](@/blog/7drl2018-day1/index.md)
 
 After reflecting on this, I no longer think that an entity component system is appropriate for representing the
 types of games that I enjoy creating. The great thing about an ECS is how easy
@@ -378,7 +378,7 @@ to communicate with other humans about computing ideas.
 
 The main change I will make is posting more to this blog. There are many items
 in this page which deserve their own dedicated post going into more detail with
-digrams.
+diagrams.
 
 I also want to start a larger scale roguelike project to showcase my libraries
 and experiment more with procedural generation.

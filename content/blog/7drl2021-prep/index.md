@@ -91,7 +91,7 @@ Here's how I hope the main menu will end up. Obviously the partially-visible spa
 
 ## Engine Prep
 
-Other than the [Chargrid Roguelike Tutorial](@/blog/roguelike-tutorial-2020/index.md) I didn't get much roguelike development done
+Other than the [Chargrid Roguelike Tutorial](@/roguelike-tutorial-2020/_index.md) I didn't get much roguelike development done
 in the past year. For this 7DRL I'll be starting with the [slime99 codebase](https://github.com/gridbugs/slime99) from last year's 7DRL.
 I have been doing regular maintenance on slime99. The audio bug that meant that music was disabled at launch is fixed.
 My pull request to fix the rust audio library [rodio](https://crates.io/crates/rodio) remains unmerged after almost a year,

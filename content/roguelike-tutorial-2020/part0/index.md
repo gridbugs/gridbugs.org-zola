@@ -157,4 +157,4 @@ in the reference implementation repository, and each such branch should always b
 
 ## Ready to begin?
 
-[Click here for part 1 of the tutorial!](@/roguelike-tutorial-2020-part-1/index.md)
+[Click here for part 1 of the tutorial!](@/roguelike-tutorial-2020/part1/index.md)

@@ -1,0 +1,10 @@
+* TODO
+
+ - check image links on post-mortem-of-abandoned-game post
+ - check that the conway game of life post animation works
+ - make sure all images are compressed
+ - order of roguelike tutorial posts
+ - permalinks to roguelike tutorial are unchanged
+ - limit image width (e.g. see some images in component pinouts post, chargrid sdl frontent post, 7drl2021day4)
+ - audio elements in nes audio post
+ - download links to files, host large files somewhere else

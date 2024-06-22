@@ -361,7 +361,7 @@ The @ represents the player, and W,X,Y,Z represent NPCs. The red-shaded area is 
 cells within 3 cells of Z. On its turn, Z will move along a path on the way to one of cells which are 2
 away from the player. The first step along this path will _increase_ Z's distance from the player (from 3 to 4).
 
-I've written more on the topic of pathfinding on a grid in [a previous post](@/pathfinding-on-a-grid/index.md).
+I've written more on the topic of pathfinding on a grid in [a previous post](@/blog/pathfinding-on-a-grid/index.md).
 
 Make a new file called `behaviour.rs`:
 ```rust
@@ -1127,4 +1127,4 @@ fn previously_visible_view_cell_of_tile(tile: Tile) -> ViewCell {
 
 Reference implementation branch: [part-6.5](https://github.com/gridbugs/chargrid-roguelike-tutorial-2020/tree/part-6.5)
 
-[Click here for the next part!](@/roguelike-tutorial-2020-part-7/index.md)
+[Click here for the next part!](@/roguelike-tutorial-2020/part7/index.md)

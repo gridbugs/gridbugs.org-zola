@@ -1789,4 +1789,4 @@ to implement a death screen with explicit state machines.
 
 Reference implementation branch: [part-8.5](https://github.com/gridbugs/chargrid-roguelike-tutorial-2020/tree/part-8.5)
 
-[Click here for the next part!](@/roguelike-tutorial-2020-part-9/index.md)
+[Click here for the next part!](@/roguelike-tutorial-2020/part9/index.md)

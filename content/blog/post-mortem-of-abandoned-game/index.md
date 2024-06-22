@@ -34,8 +34,8 @@ special images to give the illusion of 3D textures.
 At this point I started to lose sight of where the project was going. The cost of adding new content was increased by the shiny new graphics
 engine, as images needed accompanying bump and light maps. I was starting to approach the limit of computation which can be done
 in a single frame on my development machine (a 2013 macbook air). I started to doubt whether top-down was really the best viewing angle for
-the task at hand, and wondered if [3/4 perspective](@/blog/images/post-mortem-of-abandoned-game/lttp.jpg/index.md) would be more appropriate, or if purely top-down implied
-a more [minimal art style](@/blog/images/post-mortem-of-abandoned-game/teleglitch.jpg/index.md). I experimented with different styles of drawing but couldn't settle
+the task at hand, and wondered if [3/4 perspective](lttp.jpg) would be more appropriate, or if purely top-down implied
+a more [minimal art style](teleglitch.jpg). I experimented with different styles of drawing but couldn't settle
 on anything I both liked and had the skill to create.
 
 Eventually I decided I'd have better luck starting a new project from scratch. I learnt a lot about computer graphics and also about
@@ -51,7 +51,7 @@ to myself that I could actually make games, I spent the weekend making
 - [Small area with dynamic lighting but no shaders](https://games.gridbugs.org/abandoned-game-small)
 
 ## Shader demos
-- [Irregular pavement shader demo](@/blog/demos/post-mortem-of-abandoned-game/pavement-phong/artwork/shaders/irregular_pavement/index.md)
-- [Tiles shader demo](@/blog/demos/2d-phong-illumination-in-webgl/index.md)
-- [Waves shader demo](@/blog/demos/post-mortem-of-abandoned-game/waves-phong/index.md)
-
+- [Irregular pavement shader demo](https://games.gridbugs.org/old-webgl-shader-demos/pavement/artwork/shaders/irregular_pavement)
+- [Tiles shader demo](https://games.gridbugs.org/old-webgl-shader-demos/tiles/)
+- [Waves shader demo](https://games.gridbugs.org/old-webgl-shader-demos/waves/)
+- [source code](https://github.com/gridbugs/old-webgl-shader-demos)

@@ -93,7 +93,7 @@ In particular, note the new file [src/world.rs](https://github.com/gridbugs/char
 ## Add Field of View
 
 Now for the interesting part. We'll be adding visible-area-detection using an implementation of the "Recursive Shadowcast" algorithm.
-For a detailed description of this algorithm, see [this post on gridbugs](@/visible-area-detection-recursive-shadowcast/index.md)
+For a detailed description of this algorithm, see [this post on gridbugs](@/blog/visible-area-detection-recursive-shadowcast/index.md)
 or [this one on roguebasin](http://www.roguebasin.com/index.php?title=FOV_using_recursive_shadowcasting).
 Grab a crate which contains an implementation of the field-of-view algorithm:
 
@@ -438,4 +438,4 @@ impl AppData {
 
 Reference implementation branch: [part-4.1](https://github.com/gridbugs/chargrid-roguelike-tutorial-2020/tree/part-4.1)
 
-[Click here for the next part!](@/roguelike-tutorial-2020-part-5/index.md)
+[Click here for the next part!](@/roguelike-tutorial-2020/part5/index.md)

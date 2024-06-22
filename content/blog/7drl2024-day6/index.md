@@ -19,6 +19,7 @@ error handling for equipping, unequipping and reloading weapons was trickier
 than I expected. Especially since you can hold one pistol in each hand.
 
 It's possible to lose the game:
+
 ![death screen](screenshot1.png)
 
 <!-- more -->

@@ -207,4 +207,4 @@ There's one more part after this one, in which we'll add equipment.
 
 Reference implementation branch: [part-12.0](https://github.com/gridbugs/chargrid-roguelike-tutorial-2020/tree/part-12.0)
 
-[Click here for the next part!](@/roguelike-tutorial-2020-part-13/index.md)
+[Click here for the next part!](@/roguelike-tutorial-2020/part13/index.md)

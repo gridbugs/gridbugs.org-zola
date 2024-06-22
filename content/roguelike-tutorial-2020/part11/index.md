@@ -1346,4 +1346,4 @@ If they make a selection, the relevant stat will increase, and they'll descend t
 
 Reference implementation branch: [part-11.4](https://github.com/gridbugs/chargrid-roguelike-tutorial-2020/tree/part-11.4)
 
-[Click here for the next part!](@/roguelike-tutorial-2020-part-12/index.md)
+[Click here for the next part!](@/roguelike-tutorial-2020/part12/index.md)

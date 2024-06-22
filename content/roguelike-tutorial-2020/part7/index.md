@@ -678,4 +678,4 @@ impl<'a> View<&'a AppData> for AppView {
 
 Reference implementation branch: [part-7.2](https://github.com/gridbugs/chargrid-roguelike-tutorial-2020/tree/part-7.2)
 
-[Click here for the next part!](@/roguelike-tutorial-2020-part-8/index.md)
+[Click here for the next part!](@/roguelike-tutorial-2020/part8/index.md)

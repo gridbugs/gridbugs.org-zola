@@ -662,4 +662,4 @@ impl AppData {
 
 Reference implementation branch: [part-10.3](https://github.com/gridbugs/chargrid-roguelike-tutorial-2020/tree/part-10.3)
 
-[Click here for the next part!](@/roguelike-tutorial-2020-part-11/index.md)
+[Click here for the next part!](@/roguelike-tutorial-2020/part11/index.md)

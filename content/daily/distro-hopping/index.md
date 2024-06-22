@@ -12,7 +12,7 @@ so that I may spot trends or re-visit states of mind from the past. The average
 post will likely be shorter and less specific than this one, but if I do it right
 there will be one per day.
 
-I've configured this site so that daily posts will appear at [/daily](@/daily/index.md).
+I've configured this site so that daily posts will appear at [/daily](@/daily/_index.md).
 They may optionally contain a title (as this one does).
 
 ## Distro Hopping

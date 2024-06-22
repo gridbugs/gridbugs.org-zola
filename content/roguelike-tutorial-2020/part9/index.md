@@ -415,7 +415,7 @@ fn game_loop() -> impl EventRoutine<Return = (), Data = AppData, View = AppView,
 
 Reference implementation branch: [part-9.0](https://github.com/gridbugs/chargrid-roguelike-tutorial-2020/tree/part-9.0)
 
-## Place Fireball Scrolls
+##  Fireball Scroll
 
 The first ranged item we'll add will be fireball scrolls. Add `FireballScroll` as a new item type.
 ```rust
@@ -1556,4 +1556,4 @@ NPCs hit with confusion spells move randomly for their next 5 turns.
 
 Reference implementation branch: [part-9.3](https://github.com/gridbugs/chargrid-roguelike-tutorial-2020/tree/part-9.3)
 
-[Click here for the next part!](@/roguelike-tutorial-2020-part-10/index.md)
+[Click here for the next part!](@/roguelike-tutorial-2020/part10/index.md)

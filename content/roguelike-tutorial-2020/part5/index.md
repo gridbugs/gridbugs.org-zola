@@ -406,4 +406,4 @@ Now that the basic framework for AI is set up, it will be easier to add AI in a 
 
 Reference implementation branch: [part-5.2](https://github.com/gridbugs/chargrid-roguelike-tutorial-2020/tree/part-5.2)
 
-[Click here for the next part!](@/roguelike-tutorial-2020-part-6/index.md)
+[Click here for the next part!](@/roguelike-tutorial-2020/part6/index.md)

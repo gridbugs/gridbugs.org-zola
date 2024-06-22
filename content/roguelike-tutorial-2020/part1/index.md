@@ -8,7 +8,7 @@ og_image = "screenshot.png"
 +++
 
 
-For getting set up for this tutorial, see [Part 0](@/roguelike-tutorial-2020-part-0/index.md).
+For getting set up for this tutorial, see [Part 0](@/roguelike-tutorial-2020/part0/index.md).
 
 This part will take you from printing "Hello, World!" to opening a window, drawing a '@' symbol
 (representing the player character) and moving the player around with the arrow keys.
@@ -436,4 +436,4 @@ That's it! Run the game, press the arrow keys, and the player will move around.
 
 Reference implementation branch: [part-1.2](https://github.com/gridbugs/chargrid-roguelike-tutorial-2020/tree/part-1.2)
 
-[Click here for the next part!](@/roguelike-tutorial-2020-part-2/index.md)
+[Click here for the next part!](@/roguelike-tutorial-2020/part2/index.md)

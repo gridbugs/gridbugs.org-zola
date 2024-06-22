@@ -16,7 +16,7 @@ on roguelike games and supporting libraries.
 
 <!-- more -->
 
-## [Chargrid Roguelike Tutorial](@/blog/roguelike-tutorial-2020/index.md)
+## [Chargrid Roguelike Tutorial](@/roguelike-tutorial-2020/_index.md)
 
 I made a tutorial series for making a roguelike with the
 [chargrid](https://github.com/gridbugs/chargrid) text UI library
@@ -137,7 +137,7 @@ so cool and I didn't do a 2019 recap so sharing it here instead.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YPzo-MnZ8eE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## [Daily Posts](@/blog/daily/index.md)
+## [Daily Posts](@/daily/_index.md)
 
 For about 3 months I wrote public daily posts on this site.
 They were about whatever was on my mind, but often covered technical topics I was learning about or working on,
@@ -145,7 +145,7 @@ thoughts about software engineering, and my adventures as I started using FreeBS
 
 I've since stopped writing these as it started to feel like a chore.
 The posts I'm most happy with, I'm copying to full-blown blog posts.
-The rest will still be reachable under the [Daily Posts](@/blog/daily/index.md)
+The rest will still be reachable under the [Daily Posts](@/daily/_index.md)
 page.
 
 I've started maintaining a private journal which I think will help me more personally, but I won't be sharing

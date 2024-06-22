@@ -6,7 +6,7 @@ slug = "simple-wolfenstein-3D-esque-renderer"
 
 Just for fun I implemented a simple 3D renderer using the technique employed in Wolfenstein 3D.
 The world is procedurally generated using the technique described
-[here](@/cellular-automata-cave-generation/index.md).
+[here](@/blog/cellular-automata-cave-generation/index.md).
 The renderer works by finding the depth of walls for each row of pixels on the screen, and
 drawing a vertically-centered vertical wall-coloured strip whose length is inversely proportional
 to the wall depth at that point. Wall colour has brightness inversely proportional to the
