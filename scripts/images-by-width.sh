@@ -6,7 +6,7 @@ all_images() {
 
 all_images_with_width() {
     all_images | while read -r path; do
-	width="$(file "$path" | awk -F', ' '{print $2}')"
+	width="$(file "$path" | awk -F', ' '{print $2}' | cut -d' ' -f3)"
 	printf "%s : %s\n" "$width" "$path"
     done
 }
