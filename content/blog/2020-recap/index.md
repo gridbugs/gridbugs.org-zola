@@ -12,8 +12,6 @@ during 2020. I started branching into new areas this year such as
 hobby OS dev, writing, and music theory, as well as continuing to work
 on roguelike games and supporting libraries.
 
-![wolf-demo-screenshot.png](wolf-demo-screenshot.png)
-
 <!-- more -->
 
 ## [Chargrid Roguelike Tutorial](@/roguelike-tutorial-2020/_index.md)
