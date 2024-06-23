@@ -1,0 +1,9 @@
+{# The date, section, and tags of the post #}
+<div class="date-and-tags">
+  Published on {{ page.date | date(format = "%B %d, %Y") }}
+  {% if page.taxonomies.tags %}
+  in
+  {% for tag in page.taxonomies.tags %}
+  <a href="/tags/{{ tag }}">{{ tag }}</a>{% endfor %}
+  {% endif %}
+</div>

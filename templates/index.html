@@ -1,7 +1,61 @@
 {# Only used by the index page of the site #}
 {% extends "section.html" %}
 
+{% import "macros.html" as macros %}
+
 {% block content %}
 {{ section.content | safe }}
-{% endblock content %}
 
+{% set blog_section = get_section(path="blog/_index.md") %}
+<h2><a href="{{ blog_section.permalink }}">{{ blog_section.title }}</a></h2>
+<ul>
+  {% for page in blog_section.pages | slice(end=6) %}
+  <li>{{ macros::post_link(page=page) }}</li>
+  {% endfor %}
+  <li><a href="{{ blog_section.permalink }}">more...</a></li>
+</ul>
+
+{% set projects_section = get_section(path="projects/_index.md") %}
+<h2><a href="{{ projects_section.permalink }}">{{ projects_section.title }}</a></h2>
+<ul>
+  {% for project in projects_section.pages | slice(end=4) %}
+  <li>{{ macros::post_link(page=project) }}</li>
+  {% endfor %}
+  <li><a href="{{ projects_section.permalink }}">more...</a></li>
+</ul>
+
+{% set devlogs_section = get_section(path="devlogs/_index.md") %}
+<h2><a href="{{ devlogs_section.permalink }}">Devlogs</a></h2>
+<ul>
+  {% for devlog in devlogs_section.pages | slice(end=7) %}
+  <li>{{ macros::post_link(page=devlog) }}</li>
+  {% endfor %}
+  <li><a href="{{ devlogs_section.permalink }}">more...</a></li>
+</ul>
+
+<h2>Other Stuff</h2>
+
+<ul>
+  <li>
+    <a href="{{ config.base_url }}/roguelike-tutorial-2020">Roguelike Tutorial 2020</a>.
+    A step-by-step guide to making a traditional roguelike in rust
+    using some of my libraries. It's out of date and I'm not actively
+    maintaining it but some may still find it useful.
+  </li>
+
+  <li>
+    <a href="{{ config.base_url }}/daily">Daily Posts</a>.
+    An experiment where I wrote a short post every day for about
+    100 days in 2020. I might pick this up again one day.
+  </li>
+</ul>
+
+<h2>Subscribe</h2>
+Feeds for all posts to this site:
+<ul>
+  <li><a href="{{ config.base_url }}/rss.xml">RSS</a></li>
+  <li><a href="{{ config.base_url }}/atom.xml">Atom</a></li>
+</ul>
+
+
+{% endblock content %}

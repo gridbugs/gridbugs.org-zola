@@ -1,6 +1,9 @@
+# This assumes zola revision 2e17c776605621cea7673e442577d520113efca7
 base_url = "https://www.gridbugs.org"
+title = "gridbugs"
 compile_sass = true
-
+generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml"]
 taxonomies = [
     { name = "tags" },
 ]

@@ -1,0 +1,29 @@
+{# Links to the next and previous posts #}
+<nav role="navigation">
+  <ul>
+    <li>
+      {% if page.higher %}
+      <a href="{{ page.higher.permalink }}" aria-label="Previous">
+	Previous: {{ page.higher.title }}
+      </a>
+      {% else %}
+      Previous: (none)
+      {% endif %}
+    </li>
+    <li>
+      {% set section = get_section(path=page.ancestors | last) %}
+      <a href="{{ section.permalink }}" aria-label="Index">
+	Index: {{ section.title }}
+      </a>
+    </li>
+    <li>
+      {% if page.lower %}
+      <a href="{{ page.lower.permalink }}" aria-label="Next">
+	Next: {{ page.lower.title }}
+      </a>
+      {% else %}
+      Next: (none)
+      {% endif %}
+    </li>
+  </ul>
+</nav>

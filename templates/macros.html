@@ -1,0 +1,3 @@
+{% macro post_link(page) %}
+<a href="{{ page.permalink | safe }}">{{ page.title }}</a><span> — {{ page.date | date(format = "%B %d, %Y") }}</span>
+{% endmacro post_link %}

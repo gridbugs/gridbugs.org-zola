@@ -2,5 +2,9 @@
 {% extends "base.html" %}
 
 {% block title %}
-{{ section.title }}
+{% if section.title == config.title %}
+{{ config.title }}
+{% else %}
+{{ config.title }}: {{ section.title }}
+{% endif %}
 {% endblock title %}

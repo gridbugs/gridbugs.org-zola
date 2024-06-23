@@ -1,5 +1,7 @@
-{# The blog index page #}
+{# Index page for blog-like sections #}
 {% extends "section.html" %}
+
+{% import "macros.html" as macros %}
 
 {% block content %}
 <h1 class="title">
@@ -10,7 +12,7 @@
 
 <ul>
   {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  <li>{{ macros::post_link(page=page) }}</li>
   {% endfor %}
 </ul>
 {% endblock content %}

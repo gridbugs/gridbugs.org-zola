@@ -5,7 +5,7 @@
  - make sure all images are compressed
  - order of roguelike tutorial posts
  - permalinks to roguelike tutorial are unchanged
- - limit image width (e.g. see some images in component pinouts post, chargrid sdl frontent post, 7drl2021day4)
+ - limit image width (e.g. see some images in component pinouts post, chargrid sdl frontent post, 7drl2021day4, trekking post)
  - audio elements in nes audio post
  - download links to files
  - in component pinout post, download links should point to original source (to save bandwidth if anyone clicks them)

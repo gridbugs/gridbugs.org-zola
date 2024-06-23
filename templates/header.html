@@ -1,0 +1,25 @@
+<header>
+  <nav role="navigation">
+    <ul>
+      <li>
+	<a href="{{ config.base_url }}">{{ config.title }}</a>
+      </li>
+      {% if page %}
+      {% set section = get_section(path=page.ancestors | last) %}
+      {% if section.title != "gridbugs" %}
+      <li>
+	<a href="{{ section.permalink }}">{{ section.title }}</a>
+      </li>
+      {% endif %}
+      {% endif %}
+    </ul>
+    <ul>
+      <li><a href="{{ config.base_url }}/about">about</a></li>
+      <li><a href="{{ config.base_url }}/tags">tags</a></li>
+      <li><a href="https://hachyderm.io/@gridbugs">mastodon</a></li>
+      <li><a href="{{ config.base_url }}/atom.xml">feed</a></li>
+      <li><a href="https://gridbugs.itch.io">itch</a></li>
+      <li><a href="https://github.com/gridbugs">github</a></li>
+    </ul>
+  </nav>
+</header>
