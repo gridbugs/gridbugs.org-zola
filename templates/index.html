@@ -9,7 +9,7 @@
 {% set blog_section = get_section(path="blog/_index.md") %}
 <h2><a href="{{ blog_section.permalink }}">{{ blog_section.title }}</a></h2>
 <ul>
-  {% for page in blog_section.pages | slice(end=6) %}
+  {% for page in blog_section.pages | slice(end=5) %}
   <li>{{ macros::post_link(page=page) }}</li>
   {% endfor %}
   <li><a href="{{ blog_section.permalink }}">more...</a></li>
@@ -18,7 +18,7 @@
 {% set projects_section = get_section(path="projects/_index.md") %}
 <h2><a href="{{ projects_section.permalink }}">{{ projects_section.title }}</a></h2>
 <ul>
-  {% for project in projects_section.pages | slice(end=4) %}
+  {% for project in projects_section.pages | slice(end=5) %}
   <li>{{ macros::post_link(page=project) }}</li>
   {% endfor %}
   <li><a href="{{ projects_section.permalink }}">more...</a></li>
@@ -27,7 +27,7 @@
 {% set devlogs_section = get_section(path="devlogs/_index.md") %}
 <h2><a href="{{ devlogs_section.permalink }}">Devlogs</a></h2>
 <ul>
-  {% for devlog in devlogs_section.pages | slice(end=7) %}
+  {% for devlog in devlogs_section.pages | slice(end=5) %}
   <li>{{ macros::post_link(page=devlog) }}</li>
   {% endfor %}
   <li><a href="{{ devlogs_section.permalink }}">more...</a></li>

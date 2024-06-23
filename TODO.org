@@ -1,5 +1,4 @@
 * TODO
 
  - nav links at the tops of posts
- - limit image width (e.g. see some images in component pinouts post, chargrid sdl frontent post, 7drl2021day4, trekking post)
  - in component pinout post, download links should point to original source (to save bandwidth if anyone clicks them)

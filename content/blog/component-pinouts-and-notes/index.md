@@ -15,7 +15,7 @@ reading the datasheets.
 
 ## 78L05 Voltage Regulator in TO-92 package
 
-{% file component-datasheets/l78l.pdf | Datasheet (pdf) for L78L series voltage regulators which includes the 78L05 %}
+[Datasheet (pdf) for L78L series voltage regulators which includes the 78L05](https://www.st.com/resource/en/datasheet/l78l.pdf)
 
 The 78L05 provides a regulated 5v supply on its output pin if sufficient voltage
 (at least 7v) is supplied to its input.
@@ -54,9 +54,10 @@ from the output, but if it's up to 100mA then 7v will be fine.
 
 ## LM358 and TL072 Dual Op Amps
 
-{% file component-datasheets/lm358.pdf | Datasheet (pdf) for LM385 Dual Op Amp (also contains information on related components) %}
 
-{% file component-datasheets/tl07x.pdf | Datasheet (pdf) for TL072 Dual Op Amp (also contains information on related components) %}
+[Datasheet (pdf) for LM385 Dual Op Amp (also contains information on related components)](https://www.ti.com/lit/gpn/lm358)
+
+[Datasheet (pdf) for TL072 Dual Op Amp (also contains information on related components)](https://www.ti.com/lit/ds/symlink/tl072.pdf)
 
 Both components include a pair of op amps on a single chip and they have
 identical pinouts. This is the pinout viewed from top-down:
@@ -84,7 +85,7 @@ the chip.
 
 ## TL074 Quad Op Amp
 
-{% file component-datasheets/tl07x.pdf | Datasheet (pdf) for TL074 Dual Op Amp (also contains information on related components) %}
+[Datasheet (pdf) for TL074 Quad Op Amp (also contains information on related components)](https://www.ti.com/lit/ds/symlink/tl072.pdf)
 
 This is 4 op-amps in a single chip. This is the pinout viewed top-down:
 
@@ -105,7 +106,7 @@ above. The semi-circular indentation on the top of the IC is facing upwards.
 
 ## MAX495 Op Amp
 
-{% file component-datasheets/MAX49x.pdf | Datasheet (pdf) for MAX495 Op Amp (also contains information on related components) %}
+[Datasheet (pdf) for MAX495 Op Amp (also contains information on related components)](MAX49x.pdf)
 
 This Op Amp is marketed as "Rail to Rail" which means its min and max outputs are close to the + and - supply voltages.
 
@@ -133,9 +134,9 @@ info in the manual.
 
 ## Arduino Nano
 
-{% file component-datasheets/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf | Datasheet (pdf) for Atmel Atmega328P (the microcontroller on the Arduino Nano) %}
+[Datasheet (pdf) for Atmel Atmega328P (the microcontroller on the Arduino Nano](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf)
 
-{% file component-datasheets/Arduino_Nano-Rev3.2-SCH.pdf | Schematic of the Arduino Nano %}
+[Schematic of the Arduino Nano](Arduino_Nano-Rev3.2-SCH.pdf)
 
 ### Arduino Nano Pinout
 
