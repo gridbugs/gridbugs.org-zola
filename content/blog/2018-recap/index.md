@@ -52,7 +52,7 @@ a roguelike soon.
 This is an experiment to see how hard it is to make a simple physics engine,
 appropriate for use in a platform game. The answer is: very!
 
-![collisions.gif](collisions.gif)
+{{ video_player_mp4_autoplay_loop(src="collisions.mp4") }}
 
 It took a long time to get it to the state in the video above. There were many
 rewrites, and hours of debugging the player (the red square) getting stuck on
@@ -73,7 +73,7 @@ something that works reliably.
 That said, if I replace the double precision floats with single precision
 floats, this happens:
 
-![collisions-bad.gif](collisions-bad.gif)
+{{ video_player_mp4_autoplay_loop(src="collisions-bad.mp4") }}
 
 The biggest step forward I had while working on this was changing my
 representation of polygons from using "regular" line segments as their edges, to
@@ -157,7 +157,7 @@ but you want the visible part of the scene to be rendered differently (brighter 
 Also the scene is a hand drawn black and white image - not a collection of
 polygons, as is the case for most 3d graphics.
 
-![shadows1.gif](shadows1.gif)
+{{ video_player_mp4_autoplay_loop(src="shadows1.mp4") }}
 
 The approach I used for this demo is each frame, test each pixel for visibility
 by considering the
@@ -188,7 +188,7 @@ scanning on the original image, use a low resolution version of the
 image (which has fewer pixels, so the scan will take fewer steps), only checking the
 high resolution image when more detail is required.
 
-![shadows2.gif](shadows2.gif)
+{{ video_player_mp4_autoplay_loop(src="shadows2.mp4") }}
 
 In this demo, I create several different resolution versions of the scene, and
 start scanning in the lowest resolution. When a grey pixel is encountered, I

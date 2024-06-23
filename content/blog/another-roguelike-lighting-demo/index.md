@@ -67,7 +67,7 @@ it makes it cumbersome to implement real-time effects like animation. I'm
 experimenting with a polling game loop, which makes it easy to do real time
 animations.
 
-![gameplay.gif](gameplay.gif)
+{{ video_player_mp4_autoplay_loop(src="gameplay.mp4") }}
 
 ## What's Next
 

@@ -32,9 +32,9 @@ The player can no longer walk through walls or NPCs. There is basic bump
 combat, but no damage system yet. I made an animation system so you can see
 when take and deal damage without the need for a message log.
 
-## End of day GIF
+## End of day video
 
-![eod.gif](eod.gif)
+{{ video_player_mp4_autoplay_loop(src="eod.mp4") }}
 
 ## Wishlist
 

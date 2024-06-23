@@ -22,7 +22,7 @@ vulnerable to the sludge, which can be used to the player's advantage.
 This video shows off some abilities being used to herd enemies and push them into
 toxic sludge.
 
-![gameplay.webp](gameplay.webp)
+{{ video_player_mp4_autoplay_loop(src="gameplay.mp4") }}
 
 I spent some time today fixing pathfinding bugs.
 Areas which enemies can traverse, but would rather avoid, required rethinking the

@@ -7,7 +7,7 @@ path = "post-mortem-of-abandoned-game"
 tags = ["gamedev"]
 +++
 
-I spent about 6 months of 2014 working in my spare time 
+I spent about 6 months of 2014 working in my spare time
 on what I hoped would become a top-down
 side-scrolling action-rpg. I'd just started playing Dark Souls,
 and wanted to emulate its art style and combat, but in 2D.
@@ -20,7 +20,7 @@ and visible area detection over the course of several months. Often I would find
 such as smooth interpolation between animation modes, or having characters slide along walls following a collision rather than
 stopping abruptly. Nonetheless, I continued to make progress.
 
-All the graphics were drawn using html canvas's 2D drawing context. I was interested in comparing the relative performance of 
+All the graphics were drawn using html canvas's 2D drawing context. I was interested in comparing the relative performance of
 the 2D drawing context and WebGL, which is native browser support for OpenGL ES.
 I'd attempted to learn webgl on several occasions prior to this, but never had a project to apply it to until now.
 I set about porting the low-level graphics functionality of the game to webgl, and unknowingly opened Pandora's box.

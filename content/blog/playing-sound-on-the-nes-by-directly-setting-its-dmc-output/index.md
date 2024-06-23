@@ -203,11 +203,9 @@ misshaped (e.g. the top is asymmetrical).
 
 Now instead of generating samples programmatically let's take an existing song
 and play a short segment of it on a NES by repeatedly setting the DMC load
-register. We'll use the song from the Rainbow Road stage of Mario Kart 64. It
-can be downloaded
-[here](https://downloads.khinsider.com/game-soundtracks/album/mario-kart-64/18.%2520Rainbow%2520Road.mp3).
+register. We'll use the song from the Rainbow Road stage of Mario Kart 64.
 
-![Screenshot from the Rainbow Road stage of Mario Kart 64](rainbow-road.png)
+![The Rainbow Road stage of Mario Kart 64](rainbow-road.png)
 
 Playing this file in `mplayer`, one of its log messages is:
 ```
@@ -249,21 +247,21 @@ After some trial and error I found a ~13.33 second phrase
 which sounds ok when downsampled to 3kHz. Here it is at its original sample
 rate of 48kHz:
 
-{% audio rainbow-road-1-48kHz.ogg %}
+{{ audio_player(src="rainbow-road-1-48kHz.ogg", type="audio/ogg") }}
 
 And here is how it sounds resampled at 3kHz:
 
-{% audio rainbow-road-1-3kHz.ogg %}
+{{ audio_player(src="rainbow-road-1-3kHz.ogg", type="audio/ogg") }}
 
 Obviously it doesn't sound as good, but the melody can still be heard.
 Compare this the same downsampling applied to a different section of the song
 with a higher melody. Here's a section at the original sample rate:
 
-{% audio rainbow-road-2-48kHz.ogg %}
+{{ audio_player(src="rainbow-road-2-48kHz.ogg", type="audio/ogg") }}
 
 And the same section at 3kHz:
 
-{% audio rainbow-road-2-3kHz.ogg %}
+{{ audio_player(src="rainbow-road-2-3kHz.ogg", type="audio/ogg") }}
 
 Some of the high notes are no longer audible at all. This is because
 downsampling audio has the effect of lowering the maximum frequency which can be
@@ -473,15 +471,15 @@ the section to place in the ROM is hard-coded.
 Here's how one might use it. Clone the repo and checkout the `rainbow-road`
 branch. Then run:
 ```
-$ wget https://vgmsite.com/soundtracks/mario-kart-64/nbubjzcswd/18.%20Rainbow%20Road.mp3
-$ ffmpeg -i "18. Rainbow Road.mp3" -ar 3000 rr3kHz.wav
+# This assumes the song is in a file named "Randow Road.mp3".
+$ ffmpeg -i "Rainbow Road.mp3" -ar 3000 rr3kHz.wav
 $ cargo run --manifest-path nes-apu-experiment/Cargo.toml -- rr3kHz.wav > rr.nes
 $ fceux rr.nes   # swap fceux with your favourite NES emulator
 ```
 
 Here's how it sounds:
 
-{% audio rainbow-road-1-NES.ogg %}
+{{ audio_player(src="rainbow-road-1-NES.ogg", type="audio/ogg") }}
 
 That sounds even worse than the original 3kHz version, but the melody is still
 clearly audible. One explanation for this
@@ -493,7 +491,7 @@ the effects of this by examining the waveform in audacity:
 The step shape of this wave form is the result of samples losing precision when
 being converted to 7 bit integers.
 
-Download the ROM {% file playing-sound-on-the-nes-by-directly-setting-its-dmc-output/rainbow-road.nes | here %}.
+Download the ROM [here](rainbow-road.nes).
 
 We could improve the quality by increasing the sample rate but this would
 shorten the length of the song we can store. Some ways we could increase this

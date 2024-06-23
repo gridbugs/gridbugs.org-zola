@@ -1431,7 +1431,7 @@ $ cargo run --manifest-path wfc-image/Cargo.toml --example=animate -- \
     --input wfc-image/examples/cat.png
 ```
 
-![cat-animate.gif](cat-animate.gif)
+{{ video_player_mp4_autoplay_loop(src="cat-animate.mp4") }}
 
 The `simple` example is also quite useful. It just generates images files based
 on a specified image file. I used it for all the examples in this post.

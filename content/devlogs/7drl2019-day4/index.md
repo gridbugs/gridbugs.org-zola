@@ -28,7 +28,7 @@ progression, which will take the form of adding/removing cards from the deck.
 
 ## End of Day Recording
 
-![eod.gif](eod.gif)
+{{ video_player_mp4_autoplay_loop(src="eod.mp4") }}
 
 ## Wishlist
 

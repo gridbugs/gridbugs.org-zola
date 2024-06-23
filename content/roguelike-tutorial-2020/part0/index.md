@@ -64,8 +64,8 @@ Download ttf files for a pair of fonts. They must be monospace (all characters a
 
 Two suitable fonts can be downloaded here:
 
-- {% file roguelike-tutorial-2020/fonts/PxPlus_IBM_CGAthin.ttf | IBM PxPlus Regular TTF %}
-- {% file roguelike-tutorial-2020/fonts/PxPlus_IBM_CGA.ttf | IBM PxPlus Bold TTF %}
+- [IBM PxPlus Regular TTF](PxPlus_IBM_CGAthin.ttf)
+- [IBM PxPlus Bold TTF](PxPlus_IBM_CGA.ttf)
 
 Once you have your fonts, make a "fonts" directory inside your "src" directory and place the
 fonts there.

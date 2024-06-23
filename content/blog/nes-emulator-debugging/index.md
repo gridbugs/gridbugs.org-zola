@@ -13,6 +13,11 @@ tags = ["nes", "emulation"]
     image-rendering: crisp-edges;
     image-rendering: pixelated;
 }
+.nes-emulator-debugging-screenshot video {
+    width: 512px;
+    height: 480px;
+}
+
 
 .nes-tile img {
     width: 64px;
@@ -57,7 +62,7 @@ Once I had the CPU and video output working to the point that _something_ not co
 I ran the game. I wasn't emulating input yet, so I waited for the demo.
 
 <div class="nes-emulator-debugging-screenshot">
-<img src="demo.gif">
+{{ video_player_mp4_autoplay_loop(src="demo.mp4") }}
 </div>
 
 _Hey, it mostly works!_
@@ -302,7 +307,7 @@ In my first pass through the manual I did not pick up on this subtlety!
 Correcting this instruction in my emulator, and now Mario renders correctly.
 
 <div class="nes-emulator-debugging-screenshot">
-<img src="gravity-works.gif">
+{{ video_player_mp4_autoplay_loop(src="gravity-works.mp4") }}
 </div>
 
 It seems that fixing this bug also fixed gravity...
@@ -321,7 +326,7 @@ game and conduct experiments.
 Here's a more explicit demonstration of the problem.
 
 <div class="nes-emulator-debugging-screenshot">
-<img src="floor-extension.gif">
+{{ video_player_mp4_autoplay_loop(src="floor-extension.mp4") }}
 </div>
 
 This only happens if you hit a platform on its bottom-left corner. This fact,
@@ -340,7 +345,7 @@ If collision detection has an erroneous offset, you should be able to move
 through the right-hand side of a platform too.
 
 <div class="nes-emulator-debugging-screenshot">
-<img src="jump-through-floor.gif">
+{{ video_player_mp4_autoplay_loop(src="jump-through-floor.mp4") }}
 </div>
 
 Turtles also fall through platforms too early on the right-hand side, and too
@@ -580,7 +585,7 @@ Mario's X position with a specific value which won't result in a collision.
 Notice how Mario teleports a few pixels to the left on the second frame.
 
 <div class="nes-emulator-debugging-screenshot">
-<img src="short-jump-no-collision.gif">
+{{ video_player_mp4_autoplay_loop(src="short-jump-no-collision.mp4") }}
 </div>
 
 I ran this for a specific number of frames, and recorded an execution trace.
@@ -588,7 +593,7 @@ Then I repeated the experiment with an X offset which would result in a
 collision.
 
 <div class="nes-emulator-debugging-screenshot">
-<img src="short-jump-collision.gif">
+{{ video_player_mp4_autoplay_loop(src="short-jump-collision.mp4") }}
 </div>
 
 Equipped with a collision trace, and a non-collision trace, I could now compare
@@ -797,7 +802,7 @@ VRAM address. **Thus, after setting the VRAM address, one should first read this
 register and discard the result.**_
 
 <div class="nes-emulator-debugging-screenshot">
-<img src="working.gif">
+{{ video_player_mp4_autoplay_loop(src="working.mp4") }}
 </div>
 
 Now that I've had my fun, I'm going to subject my emulator to a

@@ -89,8 +89,7 @@ The resulting ROM file is compatible with all NES emulators - it's not specific 
 
 After sharing this post online some folks pointed out that there is a standard format for ROM patches (IPS)
 that is widely supported by emulators.
-Get the NES Tetris hard drop patch
-{% file reverse-engineering-nes-tetris-to-add-hard-drop/tetris-hard-drop.ips | here %}.
+Get the NES Tetris hard drop patch [here](tetris-hard-drop.ips).
 
 ## Tooling
 
@@ -723,7 +722,7 @@ That appears to be working!
 The source code for the patching tool is available on [github](https://github.com/gridbugs/mos6502/tree/master/tetris-hard-drop-patcher).
 
 Download the IPS patch that applies the change described in this post
-{% file reverse-engineering-nes-tetris-to-add-hard-drop/tetris-hard-drop.ips | here %}.
+[here](tetris-hard-drop.ips).
 
 A second patch that adds hard drop but doesn't show the ghost piece is available
-{% file reverse-engineering-nes-tetris-to-add-hard-drop/tetris-hard-drop-no-ghost.ips | here %}.
+[here](tetris-hard-drop-no-ghost.ips).

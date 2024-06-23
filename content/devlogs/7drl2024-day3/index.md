@@ -36,7 +36,7 @@ will find the player much closer than NPCs that can't. This means I need to
 maintain multiple distance maps for the different combination of movement rules
 that NPCs can have.
 
-![Gameplay with the entire map revealed. Enemies are grouped around the player.](pathfinding.png)
+![Gameplay with the entire map revealed. Enemies are grouped around the player.](pathfinding.jpg)
 
 I also spent some time improving basic quality of life features like adding a
 message log and descriptions of tiles. This also carves out some space for the
