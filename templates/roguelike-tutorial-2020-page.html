@@ -1,12 +1,16 @@
 {# A single blog post #}
 {% extends "page.html" %}
 
+{% import "macros.html" as macros %}
+
 {% block title %}
 Roguelike Tutorial 2020: {{ page.title }}
 {% endblock title %}
 
 
 {% block content %}
+
+{{ macros::nav_links(page = page, reverse = true, include_index = false) }}
 
 <h1 class="title">
   {{ page.title }}
@@ -16,6 +20,6 @@ Roguelike Tutorial 2020: {{ page.title }}
 
 {{ page.content | safe }}
 
-{% include "nav-links-rev.html" %}
+{{ macros::nav_links(page = page, reverse = true, include_index = true) }}
 
 {% endblock content %}

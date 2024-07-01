@@ -6,8 +6,25 @@
 {% block content %}
 {{ section.content | safe }}
 
+<h1>Hi, I'm Steve</h1>
+
+<p>
+Welcome to my website! I'm interested in game development and
+synthesizers and retro hardware and emulation and going outside and
+some other things.
+</p>
+
+<p>
+Posts are organized into the categories listed on this page as well as
+with finer-grained <a href="{{ config.base_url }}/tags">tags</a>. There's also an
+<a href="{{ config.base_url }}/rss.xml">RSS</a> and
+<a href="{{ config.base_url }}/atom.xml">Atom</a>
+feed with all posts.
+</p>
+
 {% set blog_section = get_section(path="blog/_index.md") %}
 <h2><a href="{{ blog_section.permalink }}">{{ blog_section.title }}</a></h2>
+<p>Recent posts:</p>
 <ul>
   {% for page in blog_section.pages | slice(end=5) %}
   <li>{{ macros::post_link(page=page) }}</li>
@@ -17,6 +34,7 @@
 
 {% set projects_section = get_section(path="projects/_index.md") %}
 <h2><a href="{{ projects_section.permalink }}">{{ projects_section.title }}</a></h2>
+<p>Recent projects:</p>
 <ul>
   {% for project in projects_section.pages | slice(end=5) %}
   <li>{{ macros::post_link(page=project) }}</li>
@@ -26,6 +44,7 @@
 
 {% set devlogs_section = get_section(path="devlogs/_index.md") %}
 <h2><a href="{{ devlogs_section.permalink }}">Devlogs</a></h2>
+<p>Recent updates:</p>
 <ul>
   {% for devlog in devlogs_section.pages | slice(end=5) %}
   <li>{{ macros::post_link(page=devlog) }}</li>
@@ -50,12 +69,8 @@
   </li>
 </ul>
 
-<h2>Subscribe</h2>
-Feeds for all posts to this site:
-<ul>
-  <li><a href="{{ config.base_url }}/rss.xml">RSS</a></li>
-  <li><a href="{{ config.base_url }}/atom.xml">Atom</a></li>
-</ul>
+<h2>External Links</h2>
 
+<p>For more things I've worked on outside of this site, see the <a href="{{ config.base_url }}/external">External Links</a> page.</p>
 
 {% endblock content %}

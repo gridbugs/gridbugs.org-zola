@@ -6,8 +6,7 @@ all_images() {
 
 all_images_with_size() {
     all_images | while read -r path; do
-	width="$(file "$path" | awk -F', ' '{print $2}')"
-	printf "%s : %s\n" "$width" "$path"
+	printf "%s : %s\n" "$(stat -c "%s" "$path")" "$path"
     done
 }
 

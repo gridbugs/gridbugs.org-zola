@@ -1,4 +1,3 @@
 * TODO
 
  - nav links at the tops of posts
- - in component pinout post, download links should point to original source (to save bandwidth if anyone clicks them)

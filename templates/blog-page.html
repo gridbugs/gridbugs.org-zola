@@ -1,11 +1,15 @@
 {# A single blog post #}
 {% extends "page.html" %}
 
+{% import "macros.html" as macros %}
+
 {% block title %}
 {{ page.title }}
 {% endblock title %}
 
 {% block content %}
+
+{{ macros::nav_links(page = page, reverse = false, include_index = false) }}
 
 <h1 class="title">
   {{ page.title }}
@@ -15,6 +19,6 @@
 
 {{ page.content | safe }}
 
-{% include "nav-links.html" %}
+{{ macros::nav_links(page = page, reverse = false, include_index = true) }}
 
 {% endblock content %}
