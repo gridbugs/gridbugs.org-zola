@@ -25,7 +25,23 @@
             rev = "v${version}";
             hash =  "sha256-qvePWGTosOTWsuwcFeOVZ7MePFpMPkC3eosIgjlPRyY=";
           };
+
           cargoSha256 = "sha256-Q2Zx00Gf89TJcsOFqkq0b4e96clv/CLQE51gGONZZl0=";
+
+          nativeBuildInputs = [
+            pkgs.pkg-config
+          ] ++ pkgs.lib.optionals pkgs.stdenv.isDarwin [
+            pkgs.darwin.apple_sdk.frameworks.CoreServices
+            pkgs.darwin.apple_sdk.frameworks.SystemConfiguration
+          ];
+
+          buildInputs = [
+            pkgs.openssl
+            pkgs.zlib
+          ] ++ pkgs.lib.optionals pkgs.stdenv.isDarwin [
+            pkgs.darwin.apple_sdk.frameworks.CoreServices
+            pkgs.darwin.apple_sdk.frameworks.SystemConfiguration
+          ];
         };
       in
         with pkgs;
