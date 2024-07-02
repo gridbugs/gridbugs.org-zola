@@ -28,10 +28,13 @@
           cargoSha256 = "sha256-Q2Zx00Gf89TJcsOFqkq0b4e96clv/CLQE51gGONZZl0=";
         };
       in
+        with pkgs;
         {
-          devShell = pkgs.mkShell {
+          devShell = mkShell {
             buildInputs = [
               zola
+              ffmpeg
+              imagemagick
             ];
           };
         }
