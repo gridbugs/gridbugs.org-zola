@@ -1,4 +1,4 @@
-# This assumes zola revision 2e17c776605621cea7673e442577d520113efca7
+# This assumes zola 0.19.1
 base_url = "https://www.gridbugs.org"
 title = "gridbugs"
 compile_sass = true
