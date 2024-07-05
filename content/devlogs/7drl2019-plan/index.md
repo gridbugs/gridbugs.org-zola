@@ -4,7 +4,6 @@ date = 2019-03-03T09:00:00+10:00
 path = "7drl2019-plan"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 I'm about to start working on my 7drl project for 2019: Get Well Soon.

@@ -4,7 +4,6 @@ date = 2017-03-04T09:54:00+10:00
 path = "7drl2017-plan"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 For this year's [7DRL](http://7drl.roguetemple.com/) I'm making a game called

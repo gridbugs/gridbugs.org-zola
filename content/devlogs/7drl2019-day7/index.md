@@ -4,7 +4,6 @@ date = 2019-03-09T23:00:00+10:00
 path = "7drl2019-day7"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 I spent all of Saturday adding content, fixing bugs, play-testing, and balancing gameplay.

@@ -4,7 +4,6 @@ date = 2019-03-04T22:00:00+10:00
 path = "7drl2019-day2"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 The most notable feature from tonight is NPCs pre-commit

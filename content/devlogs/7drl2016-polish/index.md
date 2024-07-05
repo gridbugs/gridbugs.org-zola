@@ -4,7 +4,6 @@ date = 2016-03-10T02:18:00+10:00
 path = "7drl2016-polish"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 Tonight I finished the level generator, adding weapons and items.

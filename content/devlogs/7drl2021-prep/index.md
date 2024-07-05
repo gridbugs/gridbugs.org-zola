@@ -4,7 +4,6 @@ date = 2021-03-04
 path = "7drl2021-prep"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 <style>
 .orbital-decay {

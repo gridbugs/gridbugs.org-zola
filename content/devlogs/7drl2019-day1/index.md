@@ -4,7 +4,6 @@ date = 2019-03-03T22:00:00+10:00
 path = "7drl2019-day1"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 I configured WFC for generating spiky caves.

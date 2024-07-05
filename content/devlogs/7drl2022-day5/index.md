@@ -4,7 +4,6 @@ date = 2022-03-09
 path = "7drl2022-day5"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 Tonight I added the motivation system.

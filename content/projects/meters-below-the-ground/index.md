@@ -4,7 +4,7 @@ date = 2018-03-10T11:30:00+10:00
 path = "meters-below-the-ground"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl", "project"]
+tags = ["roguelikes", "7drl"]
 +++
 
 Meters Below the Ground is a short tactical dungeon-crawler about escaping from

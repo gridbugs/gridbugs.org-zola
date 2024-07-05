@@ -4,7 +4,7 @@ date = 2017-01-07T00:00:00+10:00
 path = "howl"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "project"]
+tags = ["roguelikes"]
 +++
 
 Howl is a turn-based tactical game, where everything has an alternate form that

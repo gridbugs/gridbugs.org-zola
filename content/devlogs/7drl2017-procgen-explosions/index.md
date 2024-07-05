@@ -4,7 +4,6 @@ date = 2017-03-09T03:03:00+10:00
 path = "7drl2017-procgen-explosions"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 Today I implemented a procedural generator. Levels are relatively simple,

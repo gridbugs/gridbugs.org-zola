@@ -4,7 +4,6 @@ date = 2018-03-04T00:47:00+10:00
 path = "7drl2018-day1"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 This year I'm making a traditional roguelike where all of your stats, abilities

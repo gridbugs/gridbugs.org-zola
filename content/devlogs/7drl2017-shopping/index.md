@@ -4,7 +4,6 @@ date = 2017-03-06T02:24:00+10:00
 path = "7drl2017-shopping"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 The main feature I implemented today was a set of menus that are displayed

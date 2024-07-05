@@ -4,7 +4,6 @@ date = 2018-03-08T00:01:00+10:00
 path = "7drl2018-npcs"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 Tonight I added all the NPCs! I've followed an insect theme, and NPCs transform

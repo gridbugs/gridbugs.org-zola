@@ -4,7 +4,6 @@ date = 2016-03-09T01:56:00+10:00
 path = "7drl2016-pathfinding"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 The most notable change from tonight is that

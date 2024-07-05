@@ -4,7 +4,6 @@ date = 2017-03-08T01:44:00+10:00
 path = "7drl2017-mechanics"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 Today I implemented lots of small mechanics to add some depth to gameplay. I

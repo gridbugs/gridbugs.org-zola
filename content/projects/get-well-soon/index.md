@@ -4,7 +4,7 @@ date = 2019-03-10T22:00:00+10:00
 path = "get-well-soon"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl", "project"]
+tags = ["roguelikes", "7drl"]
 +++
 
 Get Well Soon is a turn-based tactical dungeon crawler where all abilities are cards.

@@ -4,7 +4,6 @@ date = 2022-03-11
 path = "7drl2022-day7"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 I added a win condition, implemented an equipment system, and did a bunch of play testing and balancing.

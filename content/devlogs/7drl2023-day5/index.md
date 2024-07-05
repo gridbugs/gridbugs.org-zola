@@ -4,12 +4,11 @@ date = 2023-03-10
 path = "7drl2023-day5"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl", "procgen"]
 
 [extra]
 og_image = "night.png"
 +++
- 
+
 I added stats like health, fuel, and daylight and display them in the game's UI.
 There's a hinting system that displays hints based on what tiles are currently
 on the screen.

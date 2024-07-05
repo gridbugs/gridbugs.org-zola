@@ -4,7 +4,6 @@ date = 2019-03-05T22:00:00+10:00
 path = "7drl2019-day3"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 Lots of work on rendering tonight. I made a renderer for the current hand, which can

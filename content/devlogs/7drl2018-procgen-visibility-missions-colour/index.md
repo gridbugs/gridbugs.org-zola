@@ -4,7 +4,6 @@ date = 2018-03-04T22:16:00+10:00
 path = "7drl2018-procgen-visibility-missions-colour"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 Lots of progress today! It's starting to look like a game.

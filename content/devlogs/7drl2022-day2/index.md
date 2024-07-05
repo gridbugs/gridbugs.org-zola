@@ -4,7 +4,6 @@ date = 2022-03-06
 path = "7drl2022-day2"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 The aspect I care most about this year is setting the mood of being inside

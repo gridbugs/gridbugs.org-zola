@@ -4,7 +4,6 @@ date = 2020-02-29T08:00:00+10:00
 path = "7drl2020-plan"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 <style>
 .slime99 {

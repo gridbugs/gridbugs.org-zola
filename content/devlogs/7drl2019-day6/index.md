@@ -4,7 +4,6 @@ date = 2019-03-08T23:00:00+10:00
 path = "7drl2019-day6"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 I added 2 new upgrades: the Cursed Altar, and the Plentiful Fountain.

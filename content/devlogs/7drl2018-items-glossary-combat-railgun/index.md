@@ -4,7 +4,6 @@ date = 2018-03-05T23:42:00+10:00
 path = "7drl2018-items-glossary-combat-railgun"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 The most exciting changes today are the "Glossary", and a revamped combat 

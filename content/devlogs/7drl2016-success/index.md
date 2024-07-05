@@ -4,7 +4,6 @@ date = 2016-03-12T00:17:00+10:00
 path = "7drl2016-success"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 It's now Friday night (technically Saturday morning). Tomorrow morning it will have been 1 week since I

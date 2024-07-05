@@ -4,7 +4,7 @@ date = 2023-03-12
 path = "boat-journey"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl", "project"]
+tags = ["roguelikes", "7drl"]
 
 [extra]
 og_image = "cover.png"

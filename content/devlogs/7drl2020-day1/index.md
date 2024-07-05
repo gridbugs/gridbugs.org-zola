@@ -4,7 +4,6 @@ date = 2020-02-29T20:00:00+10:00
 path = "7drl2020-day1"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 Today I focused on procedural generation. I have a small playable demo of a

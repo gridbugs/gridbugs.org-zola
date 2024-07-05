@@ -4,7 +4,7 @@ date = 2022-04-06
 path = "rain-forest"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl", "project"]
+tags = ["roguelikes", "7drl"]
 
 [extra]
 og_image = "screenshot.png"

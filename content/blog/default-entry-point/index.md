@@ -4,7 +4,7 @@ date = 2023-01-07
 path = "if-you-use-a-custom-linker-script-_start-is-not-necessarily-the-entry-point"
 
 [taxonomies]
-tags = ["unix", "systems"]
+tags = ["unix"]
 +++
 
 For most of my life I took for granted that programs begin executing at an

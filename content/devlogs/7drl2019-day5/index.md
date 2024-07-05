@@ -4,7 +4,6 @@ date = 2019-03-07T23:00:00+10:00
 path = "7drl2019-day5"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 I added the first of three planned upgrade items tonight: the Cleansing Flame.

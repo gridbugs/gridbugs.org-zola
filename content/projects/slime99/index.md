@@ -4,7 +4,7 @@ date = 2020-03-08T06:00:00+10:00
 path = "slime99"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl", "project"]
+tags = ["roguelikes", "7drl"]
 
 [extra]
 og_image = "screenshot.png"

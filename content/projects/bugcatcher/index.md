@@ -4,7 +4,7 @@ date = 2016-02-09T23:49:01+10:00
 path = "bugcatcher"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "project"]
+tags = ["roguelikes"]
 +++
 
 This is my first attempt at writing [one game a month](http://www.onegameamonth.com/). It's a turn-based

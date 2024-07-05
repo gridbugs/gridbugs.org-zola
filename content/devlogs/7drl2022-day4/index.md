@@ -4,7 +4,6 @@ date = 2022-03-08
 path = "7drl2022-day4"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 Tonight I added the concept of time to the game.

@@ -4,7 +4,7 @@ date = 2021-03-14
 path = "orbital-decay"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl", "project"]
+tags = ["roguelikes", "7drl"]
 
 [extra]
 og_image = "screenshot1.png"

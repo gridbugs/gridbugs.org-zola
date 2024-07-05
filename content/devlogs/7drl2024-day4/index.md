@@ -4,7 +4,6 @@ date = 2024-03-06
 path = "7drl2024-day4"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 
 [extra]
 og_image = "aim.png"

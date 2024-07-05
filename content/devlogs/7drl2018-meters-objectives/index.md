@@ -4,7 +4,6 @@ date = 2018-03-09T00:39:00+10:00
 path = "7drl2018-meters-objectives"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 Tonight I added new meters and objectives.

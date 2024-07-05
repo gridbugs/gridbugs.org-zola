@@ -4,7 +4,6 @@ date = 2016-03-11T02:08:00+10:00
 path = "7drl2016-ending"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 Tonight I implemented stairs and an ending for the game. You must reach the

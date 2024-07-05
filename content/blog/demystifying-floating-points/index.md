@@ -4,7 +4,7 @@ date = 2023-01-15
 path = "demystifying-floating-points"
 
 [taxonomies]
-tags = ["programming"]
+tags = ["algorithms"]
 +++
 
 Floating points are a way of representing numbers based on the idea that the

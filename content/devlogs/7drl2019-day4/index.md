@@ -4,7 +4,6 @@ date = 2019-03-06T23:00:00+10:00
 path = "7drl2019-day4"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 As of tonight you can actually *play* the cards from your hand.

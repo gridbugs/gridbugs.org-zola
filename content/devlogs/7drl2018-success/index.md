@@ -4,7 +4,6 @@ date = 2018-03-10T00:37:00+10:00
 path = "7drl2018-success"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 The game is done! I'll make another post in a day or so with links to download

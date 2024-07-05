@@ -4,7 +4,6 @@ date = 2022-03-07
 path = "7drl2022-day3"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 I spent the day adding assets. There's a large lake one one side of the map with a pier.

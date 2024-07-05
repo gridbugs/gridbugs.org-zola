@@ -4,7 +4,6 @@ date = 2017-03-10T03:33:00+10:00
 path = "7drl2017-consumables"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 I added many features today, most notably consumable items that can be used

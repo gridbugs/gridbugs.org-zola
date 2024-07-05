@@ -4,7 +4,7 @@ date = 2016-03-01T01:27:01+10:00
 path = "glacial"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "project"]
+tags = ["roguelikes"]
 +++
 
 A roguelike I made in Februrary 2016.

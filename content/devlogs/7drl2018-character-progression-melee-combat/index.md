@@ -4,7 +4,6 @@ date = 2018-03-06T23:44:00+10:00
 path = "7drl2018-character-progression-melee-combat"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 Today I implemented character progression. Character progression is entirely

@@ -4,7 +4,6 @@ date = 2022-03-10
 path = "7drl2022-day6"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 I implemented most of the gameplay tonight. Gameplay consists of performing simple daily tasks

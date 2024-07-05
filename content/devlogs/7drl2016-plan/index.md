@@ -4,7 +4,6 @@ date = 2016-03-05T10:06:00+10:00
 path = "7drl2016-plan"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 The 7 Day Roguelike Challenge is a game jam where participants make a roguelike in 7 days.

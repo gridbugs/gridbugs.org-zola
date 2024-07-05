@@ -4,7 +4,6 @@ date = 2022-03-05
 path = "7drl2022-day1"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 I spent most of the day bootstrapping the project.

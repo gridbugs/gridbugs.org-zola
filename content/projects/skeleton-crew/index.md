@@ -4,7 +4,7 @@ date = 2016-03-12T00:19:00+10:00
 path = "skeleton-crew"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "project", "7drl"]
+tags = ["roguelikes", "7drl"]
 +++
 
 I wrote this game for the 2016 7 Day Roguelike challenge.

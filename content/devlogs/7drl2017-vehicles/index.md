@@ -4,7 +4,6 @@ date = 2017-03-07T02:41:00+10:00
 path = "7drl2017-vehicles"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 Today I added cars and motorbikes. Cars are equipped with shotguns and can

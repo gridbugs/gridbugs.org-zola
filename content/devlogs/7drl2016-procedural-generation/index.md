@@ -4,7 +4,6 @@ date = 2016-03-08T03:04:00+10:00
 path = "7drl2016-procedural-generation"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl"]
 +++
 
 This is my second attempt at a procedurally generated space ship. The first

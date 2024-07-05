@@ -4,7 +4,7 @@ date = 2023-03-09
 path = "7drl2023-day4"
 
 [taxonomies]
-tags = ["gamedev", "roguelikes", "7drl", "procgen"]
+tags = ["procgen"]
 
 [extra]
 og_image = "town.png"
