@@ -1,3 +1,4 @@
 * TODO
 
- - nav links at the tops of posts
+ - meta elements
+ - make all headings into anchor links
