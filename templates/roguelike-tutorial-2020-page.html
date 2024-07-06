@@ -10,8 +10,9 @@ Roguelike Tutorial 2020: {{ page.title }}
 
 {% block content %}
 
-{{ macros::nav_links(page = page, reverse = true, include_index = false) }}
+{{ macros::nav_links(page = page, reverse = true) }}
 
+<article>
 <h1 class="title">
   {{ page.title }}
 </h1>
@@ -19,7 +20,8 @@ Roguelike Tutorial 2020: {{ page.title }}
 {% include "date-and-tags.html" %}
 
 {{ page.content | safe }}
+</article>
 
-{{ macros::nav_links(page = page, reverse = true, include_index = true) }}
+{{ macros::nav_links(page = page, reverse = true) }}
 
 {% endblock content %}

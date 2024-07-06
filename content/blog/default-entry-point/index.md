@@ -1,5 +1,5 @@
 +++
-title = "If you use a custom linker script, _start is not (necessarily) the entry point"
+title = "If you use a custom linker script, _start might not be your entry point"
 date = 2023-01-07
 path = "if-you-use-a-custom-linker-script-_start-is-not-necessarily-the-entry-point"
 

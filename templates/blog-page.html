@@ -11,9 +11,10 @@
 
 {% set section = get_section(path=page.ancestors | last) %}
 {% if section.extra.top_nav_links %}
-{{ macros::nav_links(page = page, reverse = false, include_index = false) }}
+{{ macros::nav_links(page = page, reverse = false) }}
 {% endif %}
 
+<article>
 <h1 class="title">
   {{ page.title }}
 </h1>
@@ -21,7 +22,8 @@
 {% include "date-and-tags.html" %}
 
 {{ page.content | safe }}
+</article>
 
-{{ macros::nav_links(page = page, reverse = false, include_index = true) }}
+{{ macros::nav_links(page = page, reverse = false) }}
 
 {% endblock content %}

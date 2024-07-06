@@ -10,3 +10,5 @@ taxonomies = [
 
 [markdown]
 highlight_code = true
+highlight_theme = "inspired-github"
+smart_punctuation = true

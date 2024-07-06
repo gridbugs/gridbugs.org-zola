@@ -1,14 +1,35 @@
 <footer>
-  <ul>
-    <li><a href="https://github.com/gridbugs">github</a></li>
-    <li><a href="https://gridbugs.itch.io">itch.io</a></li>
-    <li><a href="https://hachyderm.io/@gridbugs">mastodon</a></li>
-  </ul>
-  <ul>
-    <li><a href="{{ config.base_url }}/atom.xml">atom</a></li>
-    <li><a href="{{ config.base_url }}/rss.xml">rss</a></li>
-  </ul>
-  <ul>
+  <div class="footer-nav-container">
+    <nav role="external">
+      <ul>
+	<li><a href="https://github.com/gridbugs">github</a></li>
+	<li><a href="https://gridbugs.itch.io">itch.io</a></li>
+	<li><a href="https://hachyderm.io/@gridbugs">mastodon</a></li>
+      </ul>
+    </nav>
+    <nav role="sections">
+      <ul>
+	<li><a href="{{ config.base_url }}/blog">Blog</a></li>
+	<li><a href="{{ config.base_url }}/projects">Projects</a></li>
+	<li><a href="{{ config.base_url }}/devlogs">Devlogs</a></li>
+      </ul>
+    </nav>
+    <nav role="pages">
+      <ul>
+	<li><a href="{{ config.base_url }}/about">About</a></li>
+	<li><a href="{{ config.base_url }}/contact">Contact</a></li>
+	<li><a href="{{ config.base_url }}/external">External</a></li>
+	<li><a href="{{ config.base_url }}/tags">Tags</a></li>
+      </ul>
+    </nav>
+    <nav role="syndication">
+      <ul>
+	<li><a href="{{ config.base_url }}/atom.xml">atom</a></li>
+	<li><a href="{{ config.base_url }}/rss.xml">rss</a></li>
+      </ul>
+    </nav>
+  </div>
+  <ul class="copyright">
     <li>
       Built with <a href="https://www.getzola.org/">Zola</a>.
     </li>

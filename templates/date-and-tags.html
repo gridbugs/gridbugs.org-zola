@@ -1,9 +1,11 @@
 {# The date, section, and tags of the post #}
-<div class="date-and-tags">
-  Published on {{ page.date | date(format = "%B %d, %Y") }}
+<p class="post-meta">
+  <time datetime="{{ page.date }}" itemprop="datePublished">
+    {{ page.date | date(format = "%B %d, %Y") }}
+  </time>
   {% if page.taxonomies.tags %}
   in
   {% for tag in page.taxonomies.tags %}
-  <a href="/tags/{{ tag }}">{{ tag }}</a>{% endfor %}
+  <a href="/tags/{{ tag }}" aria-label="tag">{{ tag }}</a>{% endfor %}
   {% endif %}
-</div>
+</p>

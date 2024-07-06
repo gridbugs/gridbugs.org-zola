@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+$underline-color: lightgrey;
+$content-max-width: 800px;
+$content-horizontal-padding: 40px;
+$link-color: steelblue;
+$link-color-visited: rebeccapurple;
+$text-color: black;
+$post-meta-text-color: dimgrey;
+$link-color-disabled: dimgrey;
+$nav-link-space: 1em;
+
+body {
+    text-color: $text-color;
+    max-width: $content-max-width;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+// Display content with a different background colour
+div#content {
+    padding-left: $content-horizontal-padding;
+    padding-right: $content-horizontal-padding;
+}
+
+// Use sans-serif font for headings
+h1, h2, h3, h4, h5, h6 {
+    font-family: Sans-Serif;
+}
+
+h1 {
+    border-bottom: 2px solid $underline-color;
+}
+
+// Customize colours for links.
+a {
+    color: $link-color;
+    &:visited {
+	color: $link-color-visited;
+    }
+    &:hover {
+	background-color: lightcyan;
+    }
+}
+
+// For links in headings and navigation elements, don't change the
+// colour if the link has been visited.
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, nav a {
+    color: $link-color;
+    &:visited {
+	color: $link-color;
+    }
+}
+
+.disabled-link {
+    color: $link-color-disabled;
+}
+
+// Prevent images in articles appearing wider than the article body.
+article img {
+  max-width: 100%;
+}
+
+// Style for the date and tags subheading of posts
+p.post-meta {
+    color: $post-meta-text-color;
+}
+
+// Style for the date in lists of posts
+span.post-link-date {
+    color: $post-meta-text-color;
+}
+
+div.header-nav-container nav ul {
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    list-style: none;
+    display: flex;
+
+    li.lhs {
+	margin-right: $nav-link-space;
+    }
+
+    li.first-rhs {
+	margin-left: auto;
+    }
+
+    li.rhs {
+	margin-right: $nav-link-space;
+    }
+}
+
+div.next-prev-nav-container nav ul {
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    list-style: none;
+    display: flex;
+
+    li.nav-prev {
+	padding-right: 40px;
+    }
+    
+    li.nav-next {
+	padding-left: 40px;
+	margin-left: auto;
+    }
+}
+
+ul.copyright {
+    list-style: none;
+    text-align: center;
+
+    li {
+	display: block;
+    }
+}
+
+div.footer-nav-container {
+    border-top: 2px solid $underline-color;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+    ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+
+	li {
+	    display: block;
+	}
+    }
+}
+
+article code {
+    font-size: 10pt;
+}

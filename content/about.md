@@ -15,3 +15,5 @@ projects. Nowadays I post about more general programming and
 electronics projects I work on in my spare time.
 
 For more things I've worked on outside of this site, see the [External Links](/external) page.
+
+To contact me about this site, see the [Contact](/contact) page.
