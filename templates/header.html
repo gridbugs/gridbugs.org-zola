@@ -2,19 +2,15 @@
   <div class="header-nav-container">
     <nav role="navigation">
       <ul>
-	<li class="lhs">
-	  <a href="{{ config.base_url }}">{{ config.title }}</a>
-	</li>
+	<li class="lhs"><a href="{{ config.base_url | safe }}">{{ config.title }}</a></li>
 	{% if page %}
 	{% set section = get_section(path=page.ancestors | last) %}
 	{% if section.title != "gridbugs" %}
-	<li class="lhs">
-	  <a href="{{ section.permalink }}">{{ section.title }}</a>
-	</li>
+	<li class="lhs slash-before"><a href="{{ section.permalink | safe }}">{{ section.title | lower }}</a></li>
 	{% endif %}
 	{% endif %}
-	<li class="first-rhs rhs"><a href="{{ config.base_url }}/about">About</a></li>
-	<li><a href="{{ config.base_url }}/tags">Tags</a></li>
+	<li class="first-rhs rhs"><a href="{{ config.base_url | safe }}/about">about</a></li>
+	<li><a href="{{ config.base_url | safe }}/tags">tags</a></li>
       </ul>
     </nav>
   </div>

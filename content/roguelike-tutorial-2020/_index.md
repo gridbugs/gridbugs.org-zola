@@ -3,6 +3,7 @@ title = "Roguelike Tutorial 2020"
 sort_by = "title"
 template = "roguelike-tutorial-2020.html"
 page_template = "roguelike-tutorial-2020-page.html"
+insert_anchor_links = "heading"
 
 [extra]
 og_image = "screenshot.png"
